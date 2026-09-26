@@ -1,0 +1,41 @@
+# Local secrets and authentication
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+.codex/auth.json
+.codex/config.local.toml
+.codex/sessions/
+.codex/log/
+
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+*.tsbuildinfo
+tmp/
+*.log
+.vercel/
+supabase/.temp/
+
+# OS and editor files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+~$*
+*.swp
+*.swo
