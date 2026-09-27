@@ -10,6 +10,7 @@ import { AnchorButton } from "@/shared/ui/anchor-button";
 import { siteRoutes } from "@/shared/config/navigation";
 import { Container } from "@/shared/ui/container";
 import { SectionHeading } from "@/shared/ui/section-heading";
+import { companyContent } from "@/modules/company-profile";
 import type { Service, ServiceId } from "../domain/service";
 
 const serviceIcons: Record<ServiceId, LucideIcon> = {
@@ -30,9 +31,9 @@ export function ServicesSection({ services }: { services: readonly Service[] }) 
         <SectionHeading
           id="services-title"
           as="h1"
-          description="Home maintenance, painting and care for existing spaces."
+          description={companyContent.home.introduction}
         >
-          Our services
+          {companyContent.home.heading}
         </SectionHeading>
         <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => {
@@ -54,10 +55,10 @@ export function ServicesSection({ services }: { services: readonly Service[] }) 
                 </p>
                 <AnchorButton
                   href={detailRoute ?? "#contact"}
-                  aria-label={detailRoute ? `Explore ${service.name}` : `Contact information for ${service.name}`}
+                  aria-label={detailRoute ? `Explore ${service.name}` : `Enquire about ${service.name}`}
                   className="mt-auto w-full"
                 >
-                  {detailRoute ? "Explore cabinet painting" : "Contact information"}
+                  {detailRoute ? "Explore cabinet painting" : `Enquire with ${companyContent.contact.person}`}
                   <ArrowUpRight aria-hidden="true" size={16} />
                 </AnchorButton>
               </article>

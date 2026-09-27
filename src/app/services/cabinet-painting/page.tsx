@@ -6,6 +6,18 @@ import { siteConfig } from "@/shared/config/site";
 export const metadata: Metadata = {
   title: `${cabinetPaintingContent.title} | ${siteConfig.name} — Preview`,
   description: cabinetPaintingContent.metadataDescription,
+  openGraph: {
+    title: `${cabinetPaintingContent.title} | ${siteConfig.name}`,
+    description: cabinetPaintingContent.metadataDescription,
+    siteName: siteConfig.name,
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: `${cabinetPaintingContent.title} | ${siteConfig.name}`,
+    description: cabinetPaintingContent.metadataDescription,
+  },
 };
 
 export default function CabinetPaintingPage() {

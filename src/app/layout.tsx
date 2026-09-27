@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: `${siteConfig.name} | Home maintenance & painting — Preview`,
   description:
-    "Explore L&K Group's handyman, painting, existing kitchen cabinet repainting and product information. Website preview; contact details are being confirmed.",
+    "L&K Group provides painting, cabinet refreshes, handyman services and home repair products in Sydney.",
   icons: {
     icon: {
       url: siteAssets.wordmark.src,

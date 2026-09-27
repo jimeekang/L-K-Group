@@ -5,24 +5,24 @@ export const localServiceCatalog = {
     id: "products",
     name: "Products",
     description:
-      "Home care and touch-up product information. The range and availability are being confirmed.",
+      "Practical touch-up paint kits and home repair products to help you maintain and refresh your home with ease.",
   },
   handyman: {
     id: "handyman",
-    name: "Handyman",
+    name: "Handyman Services",
     description:
-      "Practical help with small repairs and everyday home maintenance. The work involved is confirmed before proceeding.",
+      "From door adjustments and flyscreen replacements to minor repairs and installations, we take care of the small jobs around your home.",
   },
   "kitchen-cabinet-painting": {
     id: "kitchen-cabinet-painting",
     name: "Kitchen Cabinet Painting",
     description:
-      "Surface preparation and repainting for existing kitchen cabinets. New cabinet manufacture and installation are not included.",
+      "Give your existing kitchen or bathroom cabinets a fresh new look with professional painting and repairs—an affordable way to refresh your space.",
   },
   painting: {
     id: "painting",
-    name: "Painting",
+    name: "Interior & Exterior Painting",
     description:
-      "A fresh finish for walls, trim and other suitable surfaces. Preparation and the scope of work are discussed first.",
+      "Refresh and protect your home inside and out with careful preparation, quality paints, and attention to detail.",
   },
 } as const satisfies ServiceCatalog;

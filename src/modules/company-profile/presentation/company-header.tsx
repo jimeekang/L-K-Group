@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { siteAssets } from "@/shared/config/assets";
 import { getNavigationItems, siteRoutes } from "@/shared/config/navigation";
+import { siteConfig } from "@/shared/config/site";
 import { Container } from "@/shared/ui/container";
 import { companyContent } from "../content/company-content";
 import { MobileMenu } from "./mobile-menu";
@@ -21,16 +22,17 @@ export function CompanyHeader({ isHomePage = true }: { isHomePage?: boolean }) {
               <a key={item.href} href={item.href} className={navLinkClass}>{item.label}</a>
             ))}
           </nav>
-          <a href={isHomePage ? "#home" : siteRoutes.home} aria-label="L&K Group — Home" className="col-start-2 row-start-1 rounded-sm">
+          <a href={isHomePage ? "#home" : siteRoutes.home} aria-label="L&K Group — Home" className="col-start-2 row-start-1 flex flex-col items-center gap-2 rounded-sm">
             <Image
               src={wordmark.src}
               alt={wordmark.alt}
               width={wordmark.width}
               height={wordmark.height}
-              sizes="(min-width: 1280px) 400px, (min-width: 1024px) 340px, (min-width: 640px) 280px, 180px"
-              className="h-auto w-[180px] sm:w-[280px] lg:w-[340px] xl:w-[400px]"
+              sizes="(min-width: 1024px) 128px, (min-width: 640px) 104px, 96px"
+              className="h-auto w-24 sm:w-[104px] lg:w-32"
               preload={isHomePage}
             />
+            <span className="text-lg leading-6 font-semibold tracking-tight sm:text-xl">{siteConfig.name}</span>
           </a>
           <nav aria-label="More navigation" className="col-start-3 row-start-1 hidden items-center justify-end gap-5 lg:flex xl:gap-8">
             {navigationItems.slice(3).map((item) => (

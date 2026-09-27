@@ -17,7 +17,9 @@ export function SectionHeading({
     <div className="mx-auto max-w-5xl text-center">
       <div className="flex items-center gap-4 sm:gap-8">
         <span className="h-px flex-1 bg-border" aria-hidden="true" />
-        <Heading id={id} className="text-2xl font-semibold tracking-[0.12em] uppercase sm:text-3xl">
+        <Heading id={id} className={Heading === "h1"
+          ? "max-w-3xl text-3xl leading-tight font-semibold tracking-tight sm:text-4xl"
+          : "text-2xl font-semibold tracking-[0.12em] uppercase sm:text-3xl"}>
           {children}
         </Heading>
         <span className="h-px flex-1 bg-border" aria-hidden="true" />

@@ -98,6 +98,7 @@ export function CabinetPaintingDetail() {
               <p className="mt-4 max-w-lg text-sm leading-6 text-muted">{content.scope}</p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <FreeQuoteButton descriptionId="hero-quote-status" />
+                <AnchorButton href={`${siteRoutes.home}#contact`}>{content.contactLabel} <ArrowUpRight size={16} aria-hidden="true" /></AnchorButton>
                 <AnchorButton href="#cabinet-services">View services <ArrowDown size={16} aria-hidden="true" /></AnchorButton>
               </div>
               <p id="hero-quote-status" className="mt-3 max-w-md text-xs leading-5 text-muted">{content.quoteStatus}</p>
@@ -305,7 +306,10 @@ export function CabinetPaintingDetail() {
           <div className="rounded-md border border-border bg-[#f7f5f0] p-6 sm:p-10">
             <DraftSectionHeading id="cabinet-quote-title" title={content.closing.title} description={content.closing.description} />
             <p id="closing-quote-status" className="mt-5 max-w-xl text-sm leading-6 text-muted">{content.quoteStatus}</p>
-            <div className="mt-4"><FreeQuoteButton descriptionId="closing-quote-status" /></div>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <FreeQuoteButton descriptionId="closing-quote-status" />
+              <AnchorButton href={`${siteRoutes.home}#contact`}>{content.contactLabel} <ArrowUpRight size={16} aria-hidden="true" /></AnchorButton>
+            </div>
             <div className="mt-4"><ConfirmationNote>{content.closing.confirmation}</ConfirmationNote></div>
           </div>
         </Container>

@@ -1,3 +1,4 @@
+export { companyContent } from "./content/company-content";
 export { CompanyHeader } from "./presentation/company-header";
 export { BenefitsSection } from "./presentation/benefits-section";
 export { AboutSection } from "./presentation/about-section";

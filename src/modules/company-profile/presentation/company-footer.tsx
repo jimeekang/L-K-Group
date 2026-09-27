@@ -2,6 +2,7 @@ import { ArrowUp } from "lucide-react";
 import { getNavigationItems } from "@/shared/config/navigation";
 import { siteConfig } from "@/shared/config/site";
 import { Container } from "@/shared/ui/container";
+import { companyContent } from "../content/company-content";
 
 export function CompanyFooter({ isHomePage = true }: { isHomePage?: boolean }) {
   const navigationItems = getNavigationItems(isHomePage);
@@ -12,8 +13,15 @@ export function CompanyFooter({ isHomePage = true }: { isHomePage?: boolean }) {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="text-lg font-semibold">{siteConfig.name}</p>
+            <p className="mt-2 text-xs leading-6 text-muted">
+              {companyContent.business.name}<br />
+              ABN {companyContent.business.abn}<br />
+              Painting licence {companyContent.business.paintingLicence}
+            </p>
             <p className="mt-2 max-w-sm text-xs leading-5 text-muted">
-              Website preview. Concept imagery is generated and does not show completed L&K projects.
+              {isHomePage
+                ? "Website preview. Company-provided promotional artwork and process photos."
+                : "Website preview. Cabinet concept images are generated and do not show completed L&K projects."}
             </p>
           </div>
           <nav aria-label="Footer navigation" className="flex flex-wrap gap-x-6 gap-y-1">

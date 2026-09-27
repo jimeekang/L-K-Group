@@ -1,16 +1,16 @@
-import { ClipboardCheck, House, MessageSquareText } from "lucide-react";
+import { House, PaintRoller, Wrench } from "lucide-react";
 import { Container } from "@/shared/ui/container";
 import { companyContent } from "../content/company-content";
 
 const benefitIcons = {
-  conversation: MessageSquareText,
-  scope: ClipboardCheck,
-  space: House,
+  experience: PaintRoller,
+  preparation: House,
+  services: Wrench,
 };
 
 export function BenefitsSection() {
   return (
-    <section aria-label="Planning the work together">
+    <section aria-label="Why choose L&K Group">
       <Container>
         <div className="grid gap-8 border-y border-border py-8 md:grid-cols-3 md:gap-0">
           {companyContent.benefits.map((benefit) => {

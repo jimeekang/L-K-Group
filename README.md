@@ -10,7 +10,11 @@ L&K Group의 서비스 홈페이지, 온라인 쇼핑몰, ERP·CRM 운영관리 
 
 **현재 착수 순서(2026-09-27): [메인 3일 → Cabinet 약 1주 → Coatly 기반 회사 관리 웹 TODO](docs/plans/15-home-cabinet-admin-todo.md).** 아래 문서들은 전체 사업의 상세 계획이며, 당장 할 일은 이 체크리스트를 먼저 따른다.
 
-**이번 작업: Kitchen Cabinet Painting SEO 콘텐츠 초안 개정 완료.** `codex/kcp-page-prototype` 브랜치의 `/services/cabinet-painting`에 6개 서비스·재질 적합성·포함/제외 범위·공정·Ermington 10km 지역·컨셉 사례·FAQ를 구성했다. Google Maps 지역 조사와 회사 정보 교체 기준은 [SEO·지역 개정](docs/plans/19-kcp-seo-content-and-service-area.md)에 기록했다. 임시 내용은 `Draft`와 `[Company to confirm: …]`로 표시한다. lint·타입·production build와 1440·768·390·320px 실제 브라우저 검증을 마쳤으며 [최신 검증 기록](docs/verification/2026-09-27-kcp-seo-content.md)을 따른다. `Free Quote`는 비활성이고 noindex를 유지한다. 사진 업로드·AI·예약·인보이스·결제는 [후속 범위](docs/plans/18-kcp-page-prototype.md)다. Vercel·Supabase는 회사 이메일 승인 후 연결하며, [메인 디자인 초안](docs/plans/17-home-prototype-design-plan.md)의 최종 승인·적용은 별도다.
+**현재 작업: 회사 자료 반영과 메인 SEO 업데이트.** [회사 제공 자료](docs/reference-assets/company-brief.md)에 브랜드·소개·서비스·연락처·지역·사업자 정보와 Cabinet 답변, 첨부 9개를 정리했다. 메인에 실제 전화·이메일 문의와 지역 정보, 회사 로고·홍보 이미지·작업 사진을 반영하고, 연결된 Cabinet 페이지의 기존 연락·지역·공정 안내도 맞춘다. 회사 이메일은 수령됐고 계정 접근·연결/배포 승인·운영 도메인은 대기다. `noindex`는 유지하며 온라인 Free Quote·사진 업로드·AI·예약·인보이스·결제는 [후속 범위](docs/plans/18-kcp-page-prototype.md)다. [메인 디자인 초안](docs/plans/17-home-prototype-design-plan.md)의 최종 승인·적용과 현장별 전후 사례 구성은 별도다.
+
+Cabinet 상세 `/services/cabinet-painting`의 6개 서비스·적합성·포함/제외·공정·컨셉 사례·FAQ 최초 구성은 [SEO·지역 개정](docs/plans/19-kcp-seo-content-and-service-area.md)과 [이전 검증](docs/verification/2026-09-27-kcp-seo-content.md)을 참조한다. 회사가 제공한 최신 서비스 지역은 기존 지도 조사의 제한적인 후보 목록보다 우선한다.
+
+회사 자료·실제 이미지 반영 후 lint·타입·production build와 1440·768·390·320px 메인 브라우저 확인을 마쳤다. 확인 범위·남은 의존성과 화면은 [최신 검증 기록](docs/verification/2026-09-27-home-company-content.md)을 따른다.
 
 ## 로컬 앱 실행
 
@@ -25,7 +29,7 @@ npm run dev
 
 현재 Mac에서 Turbopack의 CSS worker 포트 권한 오류를 확인해 공식 Webpack 옵션으로 dev·build를 구성했다. Webpack production 빌드는 통과했다. Next.js 공식 ESLint preset의 peer 호환 범위에 맞춰 ESLint 9를 고정했으며 npm의 지원 종료 경고는 남아 있다. 자세한 결과는 [검증 기록](docs/verification/2026-09-27-home-prototype.md)을 따른다.
 
-생성된 임시 로고·사진의 경로·교체 기준과 프롬프트는 [자산 기록](docs/prototype-assets.md)에 있다. 최종 디자인·회사 연락처·운영 도메인은 별도 검토한다.
+회사 제공 이미지의 적용 위치와 기존 생성 이미지 기록은 [자산 기록](docs/prototype-assets.md)에 있다. 회사 연락처·로고·작업 사진은 수령했으며 최종 디자인·현장별 사례 설명·운영 도메인은 별도 준비한다.
 
 **보상 조건 검토(2026-09-27): [웹 유입 매출 5% 계약 분석](docs/plans/16-revenue-share-contract-review.md).** 사용자가 설명한 제안은 웹 유입으로 인정되는 매출의 5%이며 GST 포함 금액 기준이다. 최소 보수·계약 기간·귀속 규칙·코드 권리 등은 미합의다. 이 분석은 개발자 내부 검토용이며 상대방에게 전달할 계약서가 아니다.
 
@@ -60,7 +64,7 @@ npm run dev
 
 - 일정·가격·전환율은 사업 자료가 없는 상태에서 세운 **계획 가정**이다. 승인된 계약금액, 견적 단가 또는 실적이 아니다.
 - 고객용 영어 사이트를 우선하고 한국어 콘텐츠를 다음 단계에서 추가하는 안이다. 브랜드명과 법인·ABN·GST 등록 상태는 착수 단계에서 확인한다.
-- KCP 서비스 지역은 2026-09-27 사용자가 지정한 `working area.png`에 따라 **Ermington 중심 10km 반경**을 사용한다. 기존 15km 가정은 KCP에 적용하지 않는다. 정확한 회사 기준점·경계값·주소별 가능 여부는 확인 대기이며 Google Maps 조사와 지역 콘텐츠 기준은 [SEO·지역 개정](docs/plans/19-kcp-seo-content-and-service-area.md)에 기록한다. 다른 서비스·식품 배송 범위는 별도다.
+- 최신 회사 제공 서비스 지역은 **Ermington 중심 10km + Inner West Sydney 및 명시된 21개 suburb**다. 목록의 모든 지역이 10km 안에 있다는 뜻은 아니며 실제 주소별 가능 여부는 회사에 확인한다. [회사 답변](docs/reference-assets/company-brief.md)이 이전 15km 가정과 지도 후보 목록보다 우선한다. 식품 배송 범위는 별도다.
 - 실제 서비스 판매가격은 비워 두고, 산식 설명용 가격은 모두 예시로 표시한다.
 - 기존 산출물은 계획서와 작업 설정이며, 2026-09-27 로컬 Next.js 메인 프로토타입 개발 요청이 추가됐다. 앱 배포·DB 연결은 회사 승인 후 진행하고 결제 계정 개설·광고 집행은 이번 범위에 포함하지 않는다.
 

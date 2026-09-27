@@ -1,26 +1,29 @@
+import { companyContent } from "@/modules/company-profile";
+
 export const cabinetPaintingContent = {
   status: "draft-company-review",
-  draftLabel: "Draft — company confirmation required",
+  draftLabel: "Preview — project-specific details to confirm",
   previewNotice:
-    "Content preview: sections marked as draft contain temporary sample copy for company review. Service details, products, prices and availability are not yet confirmed.",
+    "Website preview with company-provided service and contact information. Draft package inclusions, prices and project-specific arrangements still need confirmation. Cabinet example images are generated concepts; online quotes and bookings are not available.",
   serviceName: "Kitchen Cabinet Painting",
   title: "Kitchen Cabinet Painting in Ermington",
   metadataDescription:
-    "Kitchen cabinet repainting, touch-ups and colour changes around Ermington, Parramatta and Ryde. Explore our 10 km service area and draft preparation and scope.",
-  locationLabel: "Existing kitchens · Ermington & nearby suburbs",
+    "Kitchen cabinet painting, repairs and colour changes around Ermington and Inner West Sydney. Explore spray-painted finishes, project scope and service areas with L&K Group.",
+  locationLabel: "Existing kitchens · Ermington & Inner West Sydney",
   introduction:
-    "Refresh the look of your existing kitchen with a considered cabinet painting plan. This local service preview covers Ermington and nearby addresses within the requested 10 km radius, with cabinet suitability and the final work scope assessed first.",
+    "Refresh your existing kitchen with cabinet painting and repairs. L&K Group serves a 10 km radius around Ermington, plus Inner West Sydney and the listed surrounding suburbs. We assess your cabinets and agree the surfaces, preparation and finish before work begins.",
   scope:
     "Keep the kitchen layout you have and explore a new finish for suitable doors, drawer fronts and visible cabinet surfaces. New cabinet manufacture and installation are not included.",
   quoteLabel: "Free Quote",
+  contactLabel: `Contact ${companyContent.contact.person}`,
   quoteStatus:
-    "Online quotes are coming soon. Enquiries are not being collected on this preview.",
+    `Online quotes are coming soon. Contact ${companyContent.contact.person} by phone or email to discuss your cabinets and request a quote.`,
   conceptCaption: "Generated concept — not a completed L&K project.",
   categoriesTitle: "Cabinet painting services",
   categoriesIntroduction:
     "Start with the type of refresh you want, then identify the surfaces and preparation it involves. The first three categories describe project types; the remaining three describe work that may form part of those projects. Overlapping work is assessed together, not treated as separate automatic charges.",
   categoriesNotice:
-    "These are sample service descriptions, not confirmed packages. The included surfaces, preparation and finish would be listed in an agreed scope.",
+    "L&K offers door, drawer and frame painting, handle replacement and surface repairs. The descriptions below explain possible project scopes; they are not fixed packages or a promise that every task is included in the price.",
   categories: [
     {
       id: "full-repainting",
@@ -63,7 +66,7 @@ export const cabinetPaintingContent = {
         "Give attention to the cabinet doors and drawer fronts that shape the look of the kitchen. Their material, profile and existing finish help determine the preparation required and which faces can be included in the proposed work.",
       notes: [
         "Fronts, edges and backs must be itemised in the scope.",
-        "Removal, reassembly and hardware handling need confirmation.",
+        "Cabinet doors are removed for spray painting; reassembly and hardware details are agreed for the project.",
       ],
     },
     {
@@ -92,7 +95,7 @@ export const cabinetPaintingContent = {
   suitability: {
     title: "Which kitchen cabinets can be painted?",
     introduction:
-      "A cabinet that looks sound from a distance may still need a closer assessment. Material, existing coating and everyday wear all influence whether repainting is suitable and how the surface should be prepared.",
+      "L&K can discuss painting across a range of cabinet materials. Each surface still needs assessment: the material, existing coating and condition influence preparation and whether painting is suitable for that particular cabinet.",
     items: [
       {
         title: "Timber and previously painted surfaces",
@@ -110,7 +113,7 @@ export const cabinetPaintingContent = {
           "Peeling finishes, loose coverings, swelling and damaged panels need separate assessment. Painting should not be presented as a repair for an underlying structural or moisture problem; another repair or replacement approach may be needed.",
       },
     ],
-    confirmation: "[Company to confirm: accepted cabinet materials and assessment method]",
+    confirmation: "[Company to confirm: surface-specific preparation and assessment details]",
     sources: [
       {
         label: "Manufacturer cabinet-door preparation guide (PDF)",
@@ -123,14 +126,14 @@ export const cabinetPaintingContent = {
   inclusions: {
     title: "What is included?",
     introduction:
-      "The draft below shows how a cabinet painting scope could be explained. It is not an offer or a fixed package: each included surface and task needs to be confirmed in writing before work starts.",
+      "Door, drawer and frame painting, handle replacement and surface repairs are available. The draft below shows how the scope is agreed: each included surface, task and price needs to be confirmed before work starts.",
     includedTitle: "Draft scope to agree",
     included: [
       "Review the existing cabinet material, condition and requested finish.",
       "List the doors, drawer fronts, frames and panels proposed for painting.",
       "Agree preparation, minor cosmetic repairs and protection for adjacent areas.",
       "Record the selected colour, sheen and coating system.",
-      "Confirm removal, reassembly and a final inspection where applicable.",
+      "Agree door removal, reassembly, hardware handling and the final inspection.",
     ],
     excludedTitle: "Excluded or separately assessed",
     excluded: [
@@ -138,14 +141,14 @@ export const cabinetPaintingContent = {
       "Structural repairs, moisture damage and replacement panels need separate assessment.",
       "Benchtops, splashbacks, walls, appliances, plumbing and electrical work are outside this draft cabinet scope.",
       "Door backs, edges, cabinet interiors, shelves and kickboards are not automatically included.",
-      "Hinge and handle replacement, drilling new holes and other hardware changes require confirmation.",
+      "Handle replacement is available; its price and inclusion, hinge work and new holes are agreed separately.",
     ],
     confirmation: "[Company to confirm: preparation allowance, included faces and hardware handling]",
   },
   process: {
     title: "How cabinet painting is planned",
     introduction:
-      "This sample sequence explains the decisions to make before and during a cabinet refresh. The company’s working method, products and timing still need to be confirmed for the material and scope of each kitchen.",
+      "Cabinet doors are removed, spray-painted and dried in a separate spray booth, reducing dust and paint odours in your home. L&K uses Dulux Aqua Enamel. Work and drying generally take 3–7 days, with careful use recommended for 7 days after reinstallation; the exact schedule and care guidance depend on your project.",
     steps: [
       {
         title: "Assess the cabinets",
@@ -155,61 +158,36 @@ export const cabinetPaintingContent = {
       {
         title: "Agree the scope",
         description:
-          "List included faces and components, repairs, colour and finish. Confirm exclusions, price and how any extra work would be approved.",
+          "List included faces and components, repairs, colour and finish. Colours can be selected to suit your home, with the final colour and sheen agreed before painting. Confirm exclusions, price and how any extra work would be approved.",
       },
       {
         title: "Prepare the surfaces",
         description:
-          "Plan protection, removal where needed, cleaning and preparation to suit the assessed surface and selected coating instructions.",
+          "Protect adjacent areas and remove cabinet doors for booth painting. Match cleaning, repairs and preparation to the assessed surface and the selected coating instructions.",
       },
       {
         title: "Apply the agreed finish",
         description:
-          "Use the confirmed coating system and application method. Coat numbers, drying intervals and curing requirements follow the chosen system.",
+          "Spray-paint and dry cabinet doors in the separate booth. Confirm the Dulux Aqua Enamel product, surface preparation, coat schedule and method for fixed frames and panels for your project.",
       },
       {
         title: "Reassemble and inspect",
         description:
-          "Where removal is included, plan reassembly when appropriate, review the agreed work and explain the confirmed care and return-to-use guidance.",
+          "Reassemble when the finish is ready and review the agreed work. Use the cabinets carefully for 7 days after reinstallation, following the project’s specific care and return-to-use advice.",
       },
     ],
     confirmations: [
-      "[Company to confirm: coating system, application method and coat schedule]",
-      "[Company to confirm: on-site or off-site work and kitchen access arrangements]",
-      "[Company to confirm: working days and curing time]",
+      "[Company to confirm: exact product, sheen, preparation system and coat schedule]",
+      "[Company to confirm: fixed-surface work and kitchen access arrangements]",
+      "The general 3–7 day work and drying range is not a fixed completion or full-curing guarantee. Confirm dates and care requirements for your kitchen.",
     ],
   },
   serviceArea: {
-    title: "Kitchen cabinet painting around Ermington",
-    introduction:
-      "A 10 km service radius around Ermington. Availability is checked for the individual property address.",
-    guidance:
-      "The nearby suburb groups below are an illustrative geographic guide for this preview, not a guarantee of coverage across each whole suburb.",
-    radiusLabel: "10 km",
-    radiusDescription: "service radius around Ermington",
-    groups: [
-      {
-        title: "Ermington & Parramatta",
-        suburbs: ["Ermington", "Rydalmere", "Dundas", "Telopea", "Parramatta", "Silverwater"],
-      },
-      {
-        title: "Ryde & the northern suburbs",
-        suburbs: ["West Ryde", "Ryde", "Eastwood", "Carlingford", "Epping", "North Rocks", "Macquarie Park"],
-      },
-      {
-        title: "Around the river & Inner West",
-        suburbs: ["Rhodes", "Concord", "Gladesville", "Auburn", "Lidcombe", "Strathfield", "Burwood", "Five Dock"],
-      },
-    ],
-    addressNote:
-      "An address-level check is required, especially near the edge of the radius. Straight-line distance is different from driving distance, and some suburbs extend beyond the radius. Current availability and travel arrangements also need confirmation.",
+    ...companyContent.serviceArea,
+    title: "Cabinet painting around Ermington & Inner West Sydney",
     boundaryNote:
-      "Addresses towards Drummoyne and Lane Cove need an individual radius check. A suburb name alone does not confirm coverage.",
+      "Lane Cove, Drummoyne and Ashfield are included in the company’s suburb list. The broader service area is not limited to addresses inside the 10 km radius.",
     confirmation: "[Company to confirm: exact service-area starting point]",
-    mapLink: {
-      label: "View Ermington on Google Maps",
-      href: "https://www.google.com/maps/search/Ermington%2C%20Sydney%2C%20City%20of%20Parramatta%20Council%2C%20New%20South%20Wales%2C%202115%2C%20Australia",
-    },
   },
   examples: {
     title: "Cabinet painting examples",
@@ -225,16 +203,16 @@ export const cabinetPaintingContent = {
       { label: "Finish direction", value: "Light neutral colour; coating and sheen to be confirmed" },
       { label: "Scope", value: "Illustrative only — no customer, location, price or outcome is claimed" },
     ],
-    photosStatus: "Company photos pending",
+    photosStatus: "Before-and-after photos pending",
     photosDescription:
-      "Real before-and-after photos and verified project details will replace this concept content after company approval and the necessary image permissions.",
+      "Paired before-and-after photos and verified project details will replace this concept content after company approval and the necessary image permissions.",
   },
   faqTitle: "Questions about cabinet painting",
   faqs: [
     {
       question: "Can laminate, timber and wrapped kitchen cabinets all be painted?",
       answer:
-        "They need different assessments. The material, existing finish, adhesion and condition must be identified before a compatible preparation and coating system can be proposed. Loose coverings, swelling or damaged panels may need another approach. [Company to confirm: accepted cabinet materials and assessment method]",
+        "L&K can discuss a range of cabinet materials, including these surfaces. The material, existing finish, adhesion and condition still need checking before preparation and coating are agreed. Loose coverings, swelling or damaged panels may need repairs or another approach; suitability cannot be guaranteed from the material name alone.",
     },
     {
       question: "When is cabinet painting different from replacing a kitchen?",
@@ -244,7 +222,7 @@ export const cabinetPaintingContent = {
     {
       question: "Are door backs, edges, interiors and handles included?",
       answer:
-        "These should be itemised in the agreed scope. Front faces do not automatically mean backs, edges, shelves or cabinet interiors are included. Removal and refitting of doors and hardware also need to be clear, while replacement handles, hinges and new holes may require separate work. [Company to confirm: included faces and hardware handling]",
+        "These are itemised in the agreed scope. L&K removes cabinet doors for booth painting, and handle replacement is available. Front faces do not automatically mean backs, edges, shelves or interiors are included. The number of included faces, refitting, hardware costs and new holes need to be agreed for the project. [Company to confirm: package inclusions and hardware allowances]",
     },
     {
       question: "How much does kitchen cabinet painting cost?",
@@ -259,23 +237,23 @@ export const cabinetPaintingContent = {
     {
       question: "How long will the work take, and can I use the kitchen?",
       answer:
-        "Timing and access depend on the preparation, work location, application method and coating system. Drying and curing are not necessarily the same stage, so return-to-use and care guidance need to be specific to the selected finish. This preview does not promise a fixed completion time or uninterrupted kitchen use. [Company to confirm: working days and curing time]",
+        "L&K generally allows 3–7 days for work and drying, and recommends careful use for 7 days after reinstallation. Doors are spray-painted and dried in a separate booth. Your actual schedule, kitchen access and care instructions depend on the preparation, scope and finish. Drying is not the same as full curing, so confirm return-to-use guidance for your project.",
     },
     {
       question: "Is my address in the Ermington service area?",
       answer:
-        "The requested area is a 10 km radius centred on Ermington. The suburb list is a guide, not an address eligibility decision. Addresses near the boundary, access and travel arrangements need checking, and the radius is not a driving-distance estimate. [Company to confirm: address eligibility and current availability]",
+        `${companyContent.serviceArea.introduction} ${companyContent.serviceArea.addressNote} The listed suburbs are not all within the 10 km radius, and an enquiry does not reserve a date.`,
     },
     {
       question: "How do I request a free quote?",
       answer:
-        "Online quotes are coming soon. The Free Quote button is currently disabled, and this preview does not collect contact details, photos or enquiries. It does not calculate prices, reserve dates or confirm bookings. The company’s enquiry contact and quote process still need to be confirmed.",
+        `Contact ${companyContent.contact.person} on ${companyContent.contact.phone} or email ${companyContent.contact.email}. For cabinet enquiries, have the door count and a photo showing the whole cabinet area ready to discuss. Online Free Quote, photo uploads and bookings are still being prepared; this preview does not calculate prices or reserve dates.`,
     },
   ],
   closing: {
     title: "Plan a refresh for your existing kitchen",
     description:
-      "When enquiries open, the next step will be to discuss your cabinet surfaces, intended finish and address so the company can confirm suitability and scope.",
-    confirmation: "[Company to confirm: enquiry contact and quote process]",
+      `Talk to ${companyContent.contact.person} about your cabinet surfaces, door count, intended finish and suburb. A photo showing the whole cabinet area can help explain the work you have in mind.`,
+    confirmation: "Prices, package inclusions and project dates are confirmed through the enquiry process.",
   },
 } as const;
