@@ -1,0 +1,7 @@
+export const navigationItems = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Contact", href: "#contact" },
+] as const;

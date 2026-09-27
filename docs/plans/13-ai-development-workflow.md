@@ -4,13 +4,13 @@
 
 | 작업 | 모델 ID | reasoning effort |
 | --- | --- | --- |
-| 계획·아키텍처·논리 검토·디버깅 원인 분석 | gpt-6-astra | xhigh |
+| 계획·기획·디자인·아키텍처·DB 구성·분석·디버깅 원인 분석 | gpt-6-astra | xhigh |
 | 테스트 설계·결과 해석·QA·보안 검토 | gpt-6-astra | xhigh |
-| 코드 개발·리팩터링·수정·테스트 코드 작성 | gpt-6-sol | high |
+| 코드 개발·리팩터링·수정·테스트 코드 작성·단순 Git 관리 | gpt-6-sol | xhigh |
 
 사용자의 'gpt-6astra extra high' 표기는 실제 모델 식별자 gpt-6-astra와 xhigh로 정리했다. 이 호스트의 도구 메타데이터는 두 모델과 해당 effort 조합을 지원 항목으로 제공한다. 별도의 AI 사진 분석 API에서 같은 모델 ID를 사용할 수 있다고 가정하지 않는다. 사진용 모델은 지원·비용·평가를 따로 확인한다.
 
-프로젝트의 [.codex/config.toml](../../.codex/config.toml)에 기본 모델 gpt-6-astra와 xhigh를 저장한다. 코드 작업 시작 시 앱의 모델 선택 또는 명시적인 CLI 옵션으로 gpt-6-sol/high를 선택한다. [AGENTS.md](../../AGENTS.md)에 작업 분류 규칙을 기록한다.
+2026-09-27 사용자 요청으로 코드 작업 effort도 `xhigh`로 갱신했다. 프로젝트의 [.codex/config.toml](../../.codex/config.toml)에 기본 모델 gpt-6-astra와 xhigh를 저장한다. 코드 작업 시작 시 앱의 모델 선택 또는 명시적인 CLI 옵션으로 gpt-6-sol/xhigh를 선택한다. [AGENTS.md](../../AGENTS.md)에 작업 분류 규칙을 기록한다.
 
 ## 적용 범위와 한계
 
@@ -23,16 +23,18 @@
 codex -m gpt-6-astra -c 'model_reasoning_effort="xhigh"'
 
 # 코드 구현과 수정
-codex -m gpt-6-sol -c 'model_reasoning_effort="high"'
+codex -m gpt-6-sol -c 'model_reasoning_effort="xhigh"'
 ```
 
-로컬 CLI는 0.155.1로 확인했다. 현재 공식 안내는 과거 config.toml의 [profiles.name] 방식 대신 별도 프로필 파일을 설명하므로 오래된 중첩 프로필 설정을 만들지 않았다. 이번 설정은 프로젝트 기본값과 명시적 실행 옵션만 사용한다. [설정 참조](https://learn.chatgpt.com/docs/config-file/config-reference), [고급 설정](https://learn.chatgpt.com/docs/config-file/config-advanced)
+현재 Mac의 CLI는 2026-09-27 `codex --version`으로 0.154.0을 확인했다. 이전 환경의 버전과 구분한다. `codex exec --help`에서 모델·설정 실행 옵션을 확인했으며 CLI 별도 실행은 사용하지 않았다. 실제 구현에는 서브에이전트 도구에서 `gpt-6-sol`·`xhigh`를 명시해 적용했다. 현재 메인 채팅 모델이 자동 전환됐다는 의미가 아니다. [설정 참조](https://learn.chatgpt.com/docs/config-file/config-reference), [고급 설정](https://learn.chatgpt.com/docs/config-file/config-advanced)
 
 ## 작업 인계
 
 Astra 작업은 요구사항 ID, 설계·불변 조건, 구현 범위, 예외, 인수 기준을 남긴다. Sol 작업은 해당 명세를 구현하고 변경 파일·테스트 명령·결과·남은 문제를 기록한다. Astra 검토는 실제 코드·실행 결과·재현 증거를 기준으로 판단하고, 실패하면 원인과 수정 범위를 좁혀 Sol 작업에 전달한다. 모델 이름이 검증 품질을 보장하지 않으므로 결과 증거가 필요하다.
 
-사용자가 별도로 지정한 서브에이전트 규칙은 gpt-5.6-sol/high다. 이번 작업에서는 서브에이전트를 호출하지 않고 커스텀 에이전트도 만들지 않았다. 향후 명시적 위임이 필요한 경우 서브에이전트는 이 규칙을 따르고, 높은 논리의 최종 판단은 Astra 메인 작업에서 수행한다. 변경된 사용자 지시가 있으면 그 지시를 우선한다.
+2026-09-27 사용자 후속 지시로 서브에이전트도 위 업무별 모델 정책을 동일하게 적용한다. 기존 gpt-5.6-sol/high 고정 규칙은 폐기한다. 계획·디자인·DB·분석·테스트 판정·QA 역할은 gpt-6-astra/xhigh, 코드·테스트 코드·단순 Git 역할은 gpt-6-sol/xhigh를 명시해 실행한다.
+
+이번 프로젝트는 명세를 준비한 뒤 Sol xhigh 서브에이전트가 구현하고 Astra xhigh가 검토하는 방식으로 이어간다. 같은 실행 방식의 승인을 다시 묻지 않으며 불필요하게 여러 에이전트를 실행하지 않는다. 현재 채팅의 자동 모델 전환과 서브에이전트의 명시적 모델 선택은 구분한다. 커스텀 에이전트 파일은 실제 필요한 경우에만 만들고 역할별 모델·effort를 명시한다.
 
 ## 기록 양식
 
