@@ -1,0 +1,155 @@
+{
+  "checkedOn": "2026-09-27",
+  "method": "Google Maps visible search results and place URL representative points; approximate Haversine straight-line distances calculated locally, not Google driving distances or full suburb polygon containment.",
+  "reference": {
+    "name": "Ermington suburb representative point, not company address",
+    "lat": -33.8143301,
+    "lng": 151.0562386,
+    "radiusKm": 10,
+    "exactCompanyOriginConfirmed": false,
+    "url": "https://www.google.com/maps/place/Ermington+NSW+2115/@-33.8101216,151.0501904,15z/data=!4m6!3m5!1s0x6b12a4627b1180a1:0x5017d681632b6a0!8m2!3d-33.8143301!4d151.0562386!16zL20vMDdfeXJm?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "places": [
+    {
+      "name": "Ermington",
+      "lat": -33.8143301,
+      "lng": 151.0562386,
+      "url": "https://www.google.com/maps/place/Ermington+NSW+2115/@-33.8101216,151.0501904,15z/data=!4m6!3m5!1s0x6b12a4627b1180a1:0x5017d681632b6a0!8m2!3d-33.8143301!4d151.0562386!16zL20vMDdfeXJm?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "approxStraightLineKm": 0
+    },
+    {
+      "name": "Parramatta",
+      "url": "https://www.google.com/maps/place/Parramatta+NSW+2150/@-33.8149601,150.998433,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12a318e167af4f:0x5017d681632c600!8m2!3d-33.814785!4d151.0017218!16zL20vMDE1Njln?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.814785,
+      "lng": 151.0017218,
+      "approxStraightLineKm": 5
+    },
+    {
+      "name": "Macquarie Park",
+      "url": "https://www.google.com/maps/place/Macquarie+Park+NSW+2113/@-33.7787554,151.1056835,14z/data=!3m1!4b1!4m6!3m5!1s0x6b12a676475b2a81:0x5017d681632bf80!8m2!3d-33.7810467!4d151.122968!16zL20vMDZsajlz?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.7810467,
+      "lng": 151.122968,
+      "approxStraightLineKm": 7.2
+    },
+    {
+      "name": "Lane Cove",
+      "url": "https://www.google.com/maps/place/Lane+Cove+NSW+2066/@-33.818032,151.1547329,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12af153e30139d:0x5017d681632bd90!8m2!3d-33.8146357!4d151.1699091!16zL20vMDJ0ZzF5?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8146357,
+      "lng": 151.1699091,
+      "approxStraightLineKm": 10.5
+    },
+    {
+      "name": "Ashfield",
+      "url": "https://www.google.com/maps/place/Ashfield+NSW+2131/@-33.8894834,151.1171441,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12ba97c512593d:0x5017d681632ac00!8m2!3d-33.8889!4d151.1249!16zL20vMDM0bmcw?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8889,
+      "lng": 151.1249,
+      "approxStraightLineKm": 10.4
+    },
+    {
+      "name": "Drummoyne",
+      "url": "https://www.google.com/maps/place/Drummoyne+NSW+2047/@-33.8520754,151.1430038,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12af929fb3db61:0x5017d681632b4f0!8m2!3d-33.8510541!4d151.1545209!16zL20vMDd2NzRy?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8510541,
+      "lng": 151.1545209,
+      "approxStraightLineKm": 10
+    },
+    {
+      "name": "Burwood",
+      "url": "https://www.google.com/maps/place/Burwood+NSW+2134/@-33.8783937,151.0938195,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12badc97f1d661:0x5017d681632aea0!8m2!3d-33.8773941!4d151.1036621!16zL20vMDRrX2tx?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8773941,
+      "lng": 151.1036621,
+      "approxStraightLineKm": 8.3
+    },
+    {
+      "name": "Five Dock",
+      "url": "https://www.google.com/maps/place/Five+Dock+NSW+2046/@-33.8663974,151.1165448,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12a54cc26f27f3:0x5017d681632b760!8m2!3d-33.8692538!4d151.1295659!16zL20vMDZuams2?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8692538,
+      "lng": 151.1295659,
+      "approxStraightLineKm": 9.1
+    },
+    {
+      "name": "Strathfield",
+      "url": "https://www.google.com/maps/place/Strathfield+NSW+2135/@-33.8791536,151.0707858,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12bb179ba3a761:0x5017d681632cc60!8m2!3d-33.8774262!4d151.0823822!16zL20vMDQxa3Zn?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8774262,
+      "lng": 151.0823822,
+      "approxStraightLineKm": 7.4
+    },
+    {
+      "name": "North Rocks",
+      "url": "https://www.google.com/maps/place/North+Rocks+NSW+2151/@-33.7757219,150.9941363,14z/data=!3m1!4b1!4m6!3m5!1s0x6b12a3f9560ef4e7:0x5017d681632c400!8m2!3d-33.7750537!4d151.0238278!16zL20vMDMwMXk1?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.7750537,
+      "lng": 151.0238278,
+      "approxStraightLineKm": 5.3
+    },
+    {
+      "name": "Carlingford",
+      "url": "https://www.google.com/maps/place/Carlingford+NSW+2118/@-33.7750911,151.0343407,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12a3f84904a539:0x5017d681632afd0!8m2!3d-33.7776913!4d151.0519642!16zL20vMDMwMV81?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.7776913,
+      "lng": 151.0519642,
+      "approxStraightLineKm": 4.1
+    },
+    {
+      "name": "Epping",
+      "url": "https://www.google.com/maps/place/Epping+NSW+2121/@-33.7739302,151.066967,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12a3c2aca242f3:0x5017d681632b690!8m2!3d-33.7738515!4d151.0831238!16zL20vMDM0Z3Qx?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.7738515,
+      "lng": 151.0831238,
+      "approxStraightLineKm": 5.1
+    },
+    {
+      "name": "Ryde",
+      "url": "https://www.google.com/maps/place/Ryde+NSW+2112/@-33.8077692,151.0933915,14z/data=!3m1!4b1!4m6!3m5!1s0x6b12a5be90fc1aad:0x5017d681632c9f0!8m2!3d-33.8129803!4d151.1049802!16zL20vMDJzN3Ay?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8129803,
+      "lng": 151.1049802,
+      "approxStraightLineKm": 4.5
+    },
+    {
+      "name": "Gladesville",
+      "url": "https://www.google.com/maps/place/Gladesville+NSW+2111/@-33.8278241,151.1160934,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12a577b74500e9:0x5017d681632b800!8m2!3d-33.8301698!4d151.1267591!16zL20vMDcweTM2?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8301698,
+      "lng": 151.1267591,
+      "approxStraightLineKm": 6.7
+    },
+    {
+      "name": "Concord",
+      "url": "https://www.google.com/maps/place/Concord+NSW+2137/@-33.8557454,151.096463,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12bad379914ad5:0x5017d681632b290!8m2!3d-33.8559625!4d151.1033131!16zL20vMDdxcDk4?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8559625,
+      "lng": 151.1033131,
+      "approxStraightLineKm": 6.4
+    },
+    {
+      "name": "Lidcombe",
+      "url": "https://www.google.com/maps/place/Lidcombe+NSW+2141/@-33.8650268,151.0285397,14z/data=!3m1!4b1!4m6!3m5!1s0x6b12bb5ec3bbec53:0x5017d681632be40!8m2!3d-33.8616915!4d151.0423034!16zL20vMDdwazBt?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8616915,
+      "lng": 151.0423034,
+      "approxStraightLineKm": 5.4
+    },
+    {
+      "name": "Auburn",
+      "url": "https://www.google.com/maps/place/Auburn+NSW+2144/@-33.8578669,151.0076503,14z/data=!3m1!4b1!4m6!3m5!1s0x6b12bcb937ef8ab7:0x5017d681632ac20!8m2!3d-33.8603378!4d151.023592!16zL20vMDQ3NDA3?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+      "lat": -33.8603378,
+      "lng": 151.023592,
+      "approxStraightLineKm": 5.9
+    }
+  ],
+  "nearbyMapLabels": [
+    "Rydalmere",
+    "Dundas",
+    "Telopea",
+    "Silverwater",
+    "West Ryde",
+    "Eastwood",
+    "Rhodes"
+  ],
+  "limitations": [
+    "Suburb representative points are not property addresses or suburb boundaries.",
+    "The user image determines the requested radius; exact company origin and boundary inclusion remain pending.",
+    "No address eligibility or booking implementation."
+  ],
+  "initialPostalCodeReference": {
+    "name": "Ermington",
+    "lat": -33.8132521,
+    "lng": 151.0616918,
+    "url": "https://www.google.com/maps/place/Ermington+NSW+2115/@-33.8104952,151.0603173,14z/data=!3m1!4b1!4m6!3m5!1s0x6b12a379fdc80809:0x1c017d6b3fba8f80!8m2!3d-33.8132521!4d151.0616918!16s%2Fg%2F1wz52w8b",
+    "approxStraightLineKm": 0,
+    "note": "Initial search resolved a postal-code result; superseded by the suburb result below."
+  }
+}

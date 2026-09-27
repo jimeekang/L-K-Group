@@ -10,7 +10,7 @@ L&K Group의 서비스 홈페이지, 온라인 쇼핑몰, ERP·CRM 운영관리 
 
 **현재 착수 순서(2026-09-27): [메인 3일 → Cabinet 약 1주 → Coatly 기반 회사 관리 웹 TODO](docs/plans/15-home-cabinet-admin-todo.md).** 아래 문서들은 전체 사업의 상세 계획이며, 당장 할 일은 이 체크리스트를 먼저 따른다.
 
-**이번 작업: Day 2 메인 프로토타입.** 로컬 Next.js 프로젝트와 메인 프로토타입을 만들고 코드 검사·실제 브라우저 검증을 마쳤다. Vercel·Supabase는 회사 이메일 승인 후 연결한다. 서비스명은 **Kitchen Cabinet Painting**이다. 순서는 지침 업데이트 → 프로젝트 생성 → 프로토타입 → 디자인 계획·검토 → 디자인 적용이다. [실행 명세](docs/plans/17-home-prototype-design-plan.md)의 디자인 초안은 사용자 검토 대기이며 최종 디자인은 아직 적용하지 않았다.
+**이번 작업: Kitchen Cabinet Painting SEO 콘텐츠 초안 개정 완료.** `codex/kcp-page-prototype` 브랜치의 `/services/cabinet-painting`에 6개 서비스·재질 적합성·포함/제외 범위·공정·Ermington 10km 지역·컨셉 사례·FAQ를 구성했다. Google Maps 지역 조사와 회사 정보 교체 기준은 [SEO·지역 개정](docs/plans/19-kcp-seo-content-and-service-area.md)에 기록했다. 임시 내용은 `Draft`와 `[Company to confirm: …]`로 표시한다. lint·타입·production build와 1440·768·390·320px 실제 브라우저 검증을 마쳤으며 [최신 검증 기록](docs/verification/2026-09-27-kcp-seo-content.md)을 따른다. `Free Quote`는 비활성이고 noindex를 유지한다. 사진 업로드·AI·예약·인보이스·결제는 [후속 범위](docs/plans/18-kcp-page-prototype.md)다. Vercel·Supabase는 회사 이메일 승인 후 연결하며, [메인 디자인 초안](docs/plans/17-home-prototype-design-plan.md)의 최종 승인·적용은 별도다.
 
 ## 로컬 앱 실행
 
@@ -27,6 +27,7 @@ npm run dev
 
 생성된 임시 로고·사진의 경로·교체 기준과 프롬프트는 [자산 기록](docs/prototype-assets.md)에 있다. 최종 디자인·회사 연락처·운영 도메인은 별도 검토한다.
 
+**보상 조건 검토(2026-09-27): [웹 유입 매출 5% 계약 분석](docs/plans/16-revenue-share-contract-review.md).** 사용자가 설명한 제안은 웹 유입으로 인정되는 매출의 5%이며 GST 포함 금액 기준이다. 최소 보수·계약 기간·귀속 규칙·코드 권리 등은 미합의다. 이 분석은 개발자 내부 검토용이며 상대방에게 전달할 계약서가 아니다.
 
 | 문서 | 개발에서 참조할 내용 |
 | --- | --- |
@@ -46,16 +47,20 @@ npm run dev
 | [13 모델과 개발 운영](docs/plans/13-ai-development-workflow.md) | Astra xhigh / Sol xhigh 작업 기준 |
 | [14 결정과 출처](docs/plans/14-decisions-and-sources.md) | 확정·제안·미정 구분과 공식 근거 |
 | [15 우선 제작 TODO](docs/plans/15-home-cabinet-admin-todo.md) | 메인·Cabinet·관리 웹의 착수 순서 |
+| [16 웹 매출배분 계약 검토](docs/plans/16-revenue-share-contract-review.md) | 내부 사업성 분석, 회수 예시, 웹 귀속·보수·IP 협상 |
 | [17 메인 프로토타입·디자인](docs/plans/17-home-prototype-design-plan.md) | 구현 범위, DDD 조립, 디자인 초안, SEO·QA 기준 |
+| [18 KCP 상세 프로토타입](docs/plans/18-kcp-page-prototype.md) | 6개 서비스 카테고리, 메인 연결, Free Quote 표시, 후속 견적·AI·예약 흐름 |
+| [19 KCP SEO·지역 콘텐츠](docs/plans/19-kcp-seo-content-and-service-area.md) | Google Maps 지역 조사, 10km 반경, 임시 회사 정보 표시·교체 기준 |
 
 클라이언트 전달본은 [Word 구현계획서](deliverables/LK_Group_Client_Implementation_Plan_KO.docx)이며, 편집 가능한 원문은 [클라이언트 제안서 Markdown](docs/client-proposal.md)이다. 기술 기준은 위 개발 문서가 원본이며, 클라이언트 문서를 변경할 때 관련 개발 문서도 함께 갱신한다. 문서 자체의 확인 결과는 [검증 기록](docs/document-validation.md)에 정리했다.
 
+기존 `deliverables/LK_Group_Planning_Package.zip`은 이번 수정 전 보관본이다. 최신 제안서는 위 Word와 Markdown을 사용한다. 내부 계약 분석 문서는 클라이언트 전달 패키지에 자동으로 포함하지 않는다.
 
 ## 계획의 사용 기준
 
 - 일정·가격·전환율은 사업 자료가 없는 상태에서 세운 **계획 가정**이다. 승인된 계약금액, 견적 단가 또는 실적이 아니다.
 - 고객용 영어 사이트를 우선하고 한국어 콘텐츠를 다음 단계에서 추가하는 안이다. 브랜드명과 법인·ABN·GST 등록 상태는 착수 단계에서 확인한다.
-- 고객 서비스 지역은 기존 요청을 따라 Ermington 기준 15km 반경을 기본안으로 둔다. 중심 좌표, 경계값 포함 여부, 도로거리 전환 여부는 결정표에서 확정한다.
+- KCP 서비스 지역은 2026-09-27 사용자가 지정한 `working area.png`에 따라 **Ermington 중심 10km 반경**을 사용한다. 기존 15km 가정은 KCP에 적용하지 않는다. 정확한 회사 기준점·경계값·주소별 가능 여부는 확인 대기이며 Google Maps 조사와 지역 콘텐츠 기준은 [SEO·지역 개정](docs/plans/19-kcp-seo-content-and-service-area.md)에 기록한다. 다른 서비스·식품 배송 범위는 별도다.
 - 실제 서비스 판매가격은 비워 두고, 산식 설명용 가격은 모두 예시로 표시한다.
 - 기존 산출물은 계획서와 작업 설정이며, 2026-09-27 로컬 Next.js 메인 프로토타입 개발 요청이 추가됐다. 앱 배포·DB 연결은 회사 승인 후 진행하고 결제 계정 개설·광고 집행은 이번 범위에 포함하지 않는다.
 

@@ -1,9 +1,11 @@
 import { ArrowUp } from "lucide-react";
-import { navigationItems } from "@/shared/config/navigation";
+import { getNavigationItems } from "@/shared/config/navigation";
 import { siteConfig } from "@/shared/config/site";
 import { Container } from "@/shared/ui/container";
 
-export function CompanyFooter() {
+export function CompanyFooter({ isHomePage = true }: { isHomePage?: boolean }) {
+  const navigationItems = getNavigationItems(isHomePage);
+
   return (
     <footer className="border-t border-border py-8">
       <Container>

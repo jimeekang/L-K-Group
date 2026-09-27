@@ -22,6 +22,13 @@ export const siteAssets = {
     height: 1024,
     provenance: "generated-concept",
   },
+  cabinetFinish: {
+    src: "/images/cabinet-finish-detail-concept.png",
+    alt: "Generated concept showing the painted finish and edge detail of an existing kitchen cabinet door.",
+    width: 1536,
+    height: 1024,
+    provenance: "generated-concept",
+  },
   livingRoom: {
     src: "/images/living-room-concept.png",
     alt: "Generated concept of a sunlit living room with freshly painted neutral walls.",

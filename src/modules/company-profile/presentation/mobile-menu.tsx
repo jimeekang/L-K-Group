@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { navigationItems } from "@/shared/config/navigation";
+import type { NavigationItem } from "@/shared/config/navigation";
 
-export function MobileMenu() {
+export function MobileMenu({ items }: { items: readonly NavigationItem[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
@@ -33,7 +33,9 @@ export function MobileMenu() {
 
   function navigateToSection(href: string) {
     setIsOpen(false);
-    document.getElementById(href.slice(1))?.focus({ preventScroll: true });
+    if (href.startsWith("#")) {
+      document.getElementById(href.slice(1))?.focus({ preventScroll: true });
+    }
   }
 
   return (
@@ -55,7 +57,7 @@ export function MobileMenu() {
         hidden={!isOpen}
         className="absolute top-full right-0 left-0 z-30 border border-border bg-background p-3 shadow-sm"
       >
-        {navigationItems.map((item) => (
+        {items.map((item) => (
           <a
             key={item.href}
             href={item.href}
