@@ -1,0 +1,13 @@
+Generation mode: built-in image_gen edit
+Final removal count: six fronts. This refinement supersedes the original seven-front candidate.
+Source 1: assemble-background.png (seven-front candidate before overwrite)
+Source 2: kitchen-finished.png
+
+Use case: precise-object-edit
+Asset type: cabinet assembly animation clean plate, opaque PNG, exact 1536 x 1024 landscape.
+Input image 1 is the EDIT TARGET: the same kitchen with seven cabinet fronts missing. Input image 2 is a REFERENCE for the exact original sage-green shaker door that must be restored.
+Make ONLY ONE tiny, localized correction to IMAGE 1: restore the RIGHT-HAND SHORT cupboard door directly ABOVE the CENTRAL RANGEHOOD. In original 1536x1024 coordinates it occupies approximately x832–916 and y186–326, with its small round brass knob near x837,y310, and is partially occluded at its upper right corner by the right brass pendant. Copy this door's original design, painted green colour, exact perspective, placement, shaker profile, knob and lighting from IMAGE 2. The brass pendant stays unchanged in front of the restored door.
+DO NOT restore the LEFT-HAND short cupboard door directly above the rangehood at x749–831. Its empty shelves stay visible.
+Everything else in IMAGE 1 is locked and must remain completely unchanged: exact camera and crop, entire room, pendant lamps, furniture, vase and foliage, counters, walls, sunlight, all fixed objects, all other cabinet faces, and ALL the other open cabinet shelf interiors.
+Final missing fronts count is SIX: (1) left short door above hood remains missing; (2–3) the two rightmost ordinary upper-wall doors at x1013–1195 remain missing; (4–6) three stacked fronts of far-right tall cabinet at x1223–1371 remain missing. Adjacent door behind right pendant stays closed. All left-side doors behind vase remain closed. No floating doors. No new items, no text, no watermark. Maintain image 1’s exact geometry, colours, shadows and contents everywhere outside that one restored right short door. Output 1536 x 1024.
+

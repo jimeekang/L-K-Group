@@ -1,0 +1,695 @@
+Create a premium, cinematic, scroll-driven 3D storytelling website for a professional **Kitchen Cabinet Painting Service**.
+
+The website should visually demonstrate the entire cabinet refinishing process as the visitor scrolls down the page.
+
+The main concept is:
+
+**“Transform an old kitchen into a beautifully refinished modern kitchen — step by step.”**
+
+The experience should feel like the user is watching the kitchen renovation happen in real time while scrolling.
+
+---
+
+# 1. Overall Experience
+
+Create a sophisticated, high-end website with:
+
+- 3D scroll storytelling
+- Smooth scroll-triggered animations
+- Cinematic transitions
+- Realistic kitchen cabinet visuals
+- Premium residential renovation branding
+- Minimal but elegant typography
+- High-end interior design aesthetic
+- Strong before-and-after transformation
+- Clear service explanation
+- Strong conversion-focused CTA
+
+The experience should feel similar to a premium architectural visualization or luxury interior-design website rather than a normal contractor website.
+
+Use a combination of:
+
+- Three.js / WebGL
+- GSAP ScrollTrigger
+- Lenis smooth scrolling
+- CSS animations
+- React / Next.js
+- Responsive WebGL rendering
+
+Optimize animations carefully so the website remains fast and smooth on desktop, tablet, and mobile.
+
+---
+
+# 2. Main 3D Scroll Storytelling Concept
+
+The main section should stay visually pinned while the visitor scrolls.
+
+Place a realistic 3D kitchen in the center of the screen.
+
+At the beginning, show an **older kitchen with dated or worn cabinet finishes**.
+
+As the user scrolls, progressively transform the cabinets through each stage of the professional painting process.
+
+The kitchen camera can subtly move, zoom, orbit, or shift perspective between stages.
+
+Each scroll section should feel connected to the previous one.
+
+Do NOT simply fade between unrelated images.
+
+The visitor should feel like they are watching the same kitchen being professionally transformed.
+
+---
+
+# 3. Hero Section
+
+Start with a full-screen cinematic hero.
+
+Show a premium modern kitchen.
+
+Main headline:
+
+**Transform Your Kitchen Without Replacing Your Cabinets**
+
+Supporting copy:
+
+**Professional cabinet painting gives your kitchen a completely new look without the cost and disruption of a full renovation.**
+
+Primary CTA:
+
+**Get a Free Quote**
+
+Secondary CTA:
+
+**See Our Process**
+
+Add a subtle scroll indicator:
+
+**Scroll to see the transformation ↓**
+
+The camera should slowly move toward the kitchen as the visitor begins scrolling.
+
+---
+
+# 4. Scroll Story – Stage 01
+## Initial Inspection
+
+Transition to the original kitchen before work begins.
+
+Show slightly dated cabinet doors and finishes.
+
+Highlight several cabinet areas with subtle 3D markers.
+
+Text:
+
+**01 — Inspection & Preparation**
+
+Before painting begins, we inspect the cabinet surfaces, hardware, coatings, and overall condition to determine the correct preparation system.
+
+Visual interaction:
+
+- Subtle camera inspection movement
+- Cabinet doors highlighted individually
+- Small callout markers
+- Soft lighting
+- Professional, technical feeling
+
+---
+
+# 5. Scroll Story – Stage 02
+## Remove Doors & Hardware
+
+As scrolling continues, cabinet doors should smoothly move away from the cabinet frames in 3D.
+
+Handles and hinges can separate as individual components.
+
+Text:
+
+**02 — Doors & Hardware Removed**
+
+Cabinet doors, drawers, handles, hinges, and removable hardware are carefully labelled and removed before refinishing begins.
+
+Animation ideas:
+
+- Cabinet doors slide outward
+- Hinges detach
+- Handles separate
+- Components move into an organized layout beside the kitchen
+- Labels subtly appear
+
+Keep the animation clean and premium, not cartoonish.
+
+---
+
+# 6. Scroll Story – Stage 03
+## Cleaning & Degreasing
+
+Create a visual treatment showing the cabinet surfaces being professionally cleaned.
+
+Text:
+
+**03 — Deep Cleaning & Degreasing**
+
+Kitchen cabinets accumulate grease, oils, cooking residue, and contaminants that can prevent coatings from bonding correctly.
+
+We thoroughly clean and degrease every surface before sanding.
+
+Visual ideas:
+
+- Slight surface grime visible initially
+- Cleaning effect moves across cabinet panels
+- Surface becomes visibly cleaner
+- Close-up camera transition showing surface texture
+
+---
+
+# 7. Scroll Story – Stage 04
+## Sanding
+
+Transition into a close-up of one cabinet door.
+
+Show a subtle sanding process.
+
+Text:
+
+**04 — Surface Preparation**
+
+Cabinet surfaces are carefully sanded to remove imperfections, reduce gloss, and create the correct surface profile for maximum coating adhesion.
+
+Animation:
+
+- Camera zooms toward cabinet surface
+- Fine sanding effect moves across panel
+- Gloss level gradually reduces
+- Surface texture becomes smooth and uniform
+
+Avoid excessive dust effects.
+
+The visual should remain clean and professional.
+
+---
+
+# 8. Scroll Story – Stage 05
+## Masking & Protection
+
+Pull the camera back to reveal the kitchen.
+
+Protect surrounding areas.
+
+Text:
+
+**05 — Masking & Protection**
+
+Benchtops, floors, appliances, walls, splashbacks, and surrounding areas are carefully protected before coatings are applied.
+
+Animation:
+
+- Protective sheets appear over benchtops
+- Floor protection rolls out
+- Appliances become masked
+- Painter's tape traces around edges
+- Kitchen transforms into a controlled painting environment
+
+This scene should communicate professionalism and attention to detail.
+
+---
+
+# 9. Scroll Story – Stage 06
+## Primer Application
+
+Create the first major visual transformation.
+
+Show cabinet surfaces gradually changing as primer is applied.
+
+Text:
+
+**06 — Professional Primer**
+
+A specialist bonding primer is applied to create a durable foundation and improve adhesion between the existing cabinet surface and the new finish.
+
+Animation:
+
+A smooth coating passes across cabinet surfaces.
+
+Old cabinet color → uniform primer finish.
+
+Show a subtle cross-section or microscopic coating layer visualization if appropriate.
+
+Optional educational label:
+
+Existing Surface  
+→ Prepared Surface  
+→ Bonding Primer  
+→ Finish Coats
+
+---
+
+# 10. Scroll Story – Stage 07
+## Professional Spray Finish
+
+This should be one of the most visually impressive moments of the website.
+
+Text:
+
+**07 — Premium Spray Finish**
+
+Multiple professional finish coats are applied to create a smooth, durable, factory-like finish.
+
+Show the selected new cabinet color gradually covering the primer.
+
+Animation:
+
+- Spray mist moves smoothly across cabinet door
+- Cabinet color transitions progressively
+- Surface becomes perfectly uniform
+- Subtle light reflection demonstrates smooth finish
+- Camera moves along cabinet edges and profiles
+
+Make the finish feel refined and premium.
+
+Avoid unrealistic exaggerated paint effects.
+
+---
+
+# 11. Scroll Story – Stage 08
+## Curing
+
+Slow the animation slightly.
+
+Text:
+
+**08 — Drying & Curing**
+
+Each coating layer is allowed to dry and cure correctly to maximize durability and finish quality.
+
+Visual concept:
+
+Show subtle time progression.
+
+Possible visual indicators:
+
+Coating Applied  
+→ Drying  
+→ Curing  
+→ Ready for Installation
+
+Keep the scene minimal.
+
+---
+
+# 12. Scroll Story – Stage 09
+## Reassembly
+
+Bring cabinet doors and hardware back toward the kitchen.
+
+Text:
+
+**09 — Professional Reassembly**
+
+Once the coating system has cured, cabinet doors, drawers, hinges, handles, and hardware are carefully reinstalled and adjusted.
+
+Animation:
+
+- Cabinet doors return to their positions
+- Hinges reconnect
+- Handles install
+- Doors align perfectly
+- Protective masking disappears
+
+The kitchen should now appear almost completely finished.
+
+---
+
+# 13. Final Transformation
+
+Create a powerful reveal.
+
+Transition from the original kitchen to the newly refinished kitchen.
+
+Headline:
+
+**Same Kitchen. Completely New Look.**
+
+Supporting text:
+
+Refresh your kitchen with a professional cabinet finish — without the cost and disruption of replacing your cabinetry.
+
+Add an interactive **Before / After slider**.
+
+LEFT:
+Before
+
+RIGHT:
+After
+
+Allow the visitor to drag between the original and transformed kitchen.
+
+---
+
+# 14. Colour Selection Section
+
+Create an elegant cabinet colour selection experience.
+
+Headline:
+
+**Choose Your New Kitchen Finish**
+
+Show realistic cabinet samples.
+
+Allow visitors to select different colors and immediately preview them on the 3D kitchen.
+
+Possible example options:
+
+- Warm White
+- Natural White
+- Soft Grey
+- Greige
+- Charcoal
+- Deep Green
+- Custom Colour
+
+When a color is selected, update the cabinet surfaces in real time.
+
+Use realistic material properties including:
+
+- Low sheen
+- Satin
+- Semi-gloss
+
+---
+
+# 15. Why Cabinet Painting
+
+Create a clean comparison section.
+
+Headline:
+
+**Why Refinish Instead of Replace?**
+
+Compare:
+
+CABINET PAINTING
+
+- Lower cost
+- Faster transformation
+- Less demolition
+- Less waste
+- Existing cabinetry retained
+- Modern premium finish
+
+FULL CABINET REPLACEMENT
+
+- Higher cost
+- Longer renovation
+- More demolition
+- More construction waste
+- Greater disruption
+
+Keep this factual and premium rather than aggressively sales-focused.
+
+---
+
+# 16. Quality Detail Section
+
+Use macro close-up visualizations of cabinet finishes.
+
+Show:
+
+- Smooth sprayed surface
+- Cabinet profiles
+- Edges
+- Corners
+- Handle areas
+- Door details
+
+Headline:
+
+**The Finish Is in the Preparation**
+
+Supporting copy:
+
+A high-quality cabinet finish depends on proper cleaning, preparation, priming, coating application, and curing.
+
+Show the details visually instead of relying only on text.
+
+---
+
+# 17. Service Area
+
+Add a simple service-area section.
+
+Headline:
+
+**Professional Cabinet Painting in Sydney**
+
+Include editable service-area information.
+
+Design the component so a service-radius map or suburb coverage list can be added later.
+
+Example:
+
+Serving homes within our local Sydney service area.
+
+CTA:
+
+**Check Your Address**
+
+---
+
+# 18. Quote CTA
+
+Finish the storytelling experience with a strong conversion section.
+
+Large headline:
+
+**Ready to Transform Your Kitchen?**
+
+Supporting text:
+
+Send us a few details about your kitchen and receive a professional cabinet painting quote.
+
+CTA:
+
+**Get My Free Quote**
+
+Secondary CTA:
+
+**Upload Kitchen Photos**
+
+Quote form should include:
+
+- Name
+- Phone
+- Email
+- Property address
+- Number of cabinet doors
+- Number of drawers
+- Current cabinet material
+- Preferred colour
+- Preferred finish
+- Photo upload
+- Additional notes
+
+---
+
+# 19. Visual Direction
+
+Use a sophisticated interior-design visual language.
+
+Colour palette:
+
+- Warm off-white
+- Soft neutral grey
+- Charcoal
+- Natural timber accents
+- Minimal black typography
+
+Avoid bright contractor-style colors.
+
+Design inspiration:
+
+Premium architecture studio  
+Luxury interior design studio  
+High-end kitchen showroom  
+Modern renovation brand
+
+Typography:
+
+Use a refined modern sans-serif.
+
+Examples:
+
+Inter  
+Manrope  
+DM Sans  
+Neue Haas Grotesk-style typography
+
+Use large editorial-style headlines with generous spacing.
+
+---
+
+# 20. Animation Direction
+
+Animations should feel:
+
+- Slow
+- Controlled
+- Precise
+- Premium
+- Architectural
+- Physically believable
+
+Avoid:
+
+- Excessive bouncing
+- Cartoon-style animation
+- Fast spinning objects
+- Heavy particle effects
+- Unnecessary parallax
+- Distracting UI movement
+
+Use scroll progress to control the 3D timeline.
+
+Scrolling forward should progress through the renovation.
+
+Scrolling backwards should naturally reverse the animation.
+
+---
+
+# 21. Performance Requirements
+
+The experience must remain performant.
+
+Use:
+
+- GLTF / GLB models
+- Draco compression
+- WebP / AVIF textures
+- Lazy loading
+- Progressive asset loading
+- GPU-friendly materials
+- Optimized geometry
+- Responsive texture resolution
+
+Desktop can use the full 3D experience.
+
+Tablet should use a simplified 3D version.
+
+Mobile should preserve the storytelling concept while reducing GPU-heavy effects.
+
+Target:
+
+60 FPS where reasonably possible.
+
+---
+
+# 22. SEO Requirements
+
+Do not build the entire website as a visual-only experience.
+
+All important service information must exist as crawlable HTML text.
+
+Create semantic content sections using:
+
+H1  
+H2  
+H3  
+Paragraphs  
+FAQ  
+Service descriptions
+
+Suggested SEO topics:
+
+Kitchen Cabinet Painting Sydney  
+Kitchen Cabinet Refinishing Sydney  
+Kitchen Cabinet Spray Painting  
+Cabinet Respraying  
+Kitchen Makeover Sydney  
+Cabinet Painting Cost  
+Kitchen Cabinet Colour Change
+
+Create structured data where appropriate:
+
+LocalBusiness  
+Service  
+FAQPage
+
+---
+
+# 23. Responsive Behaviour
+
+Desktop:
+
+Full cinematic 3D scroll storytelling.
+
+Tablet:
+
+Simplified camera movements and lighter effects.
+
+Mobile:
+
+Use vertical storytelling with a combination of lightweight 3D, rendered sequences, and optimized transitions.
+
+Never sacrifice usability for animation.
+
+Navigation, CTAs, forms, and service information must remain easy to access.
+
+---
+
+# 24. Website Structure
+
+Final site architecture:
+
+Home
+
+├── Hero  
+├── 3D Cabinet Transformation Story  
+│   ├── Inspection  
+│   ├── Door Removal  
+│   ├── Cleaning  
+│   ├── Sanding  
+│   ├── Masking  
+│   ├── Primer  
+│   ├── Spray Finish  
+│   ├── Curing  
+│   └── Reassembly  
+│
+├── Before / After  
+├── Colour Visualizer  
+├── Why Refinish  
+├── Finish Quality  
+├── Projects  
+├── Service Area  
+├── FAQ  
+└── Quote CTA
+
+Separate SEO landing pages should also be possible later:
+
+/cabinet-painting  
+/kitchen-cabinet-refinishing  
+/cabinet-spray-painting  
+/process  
+/projects  
+/colours  
+/service-areas  
+/contact
+
+---
+
+# Final Objective
+
+The website should NOT simply explain cabinet painting.
+
+It should **visually demonstrate why professional cabinet painting requires multiple preparation and coating stages**.
+
+By the time the visitor reaches the bottom of the page, they should clearly understand:
+
+1. What happens to their kitchen.
+2. Why professional preparation matters.
+3. How the painting process works.
+4. What the finished result can look like.
+5. Why refinishing can be an alternative to replacing cabinetry.
+6. How to request a quote.
+
+The overall experience should feel like:
+
+**“Watching your own kitchen transformation happen while you scroll.”**

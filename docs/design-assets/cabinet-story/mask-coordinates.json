@@ -1,0 +1,405 @@
+{
+  "source": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/kitchen-finished.png",
+  "canvas": {
+    "width": 1490,
+    "height": 1055
+  },
+  "method": "Manual visual candidate masks refined by reading source pixel-edge gradients. Not runtime-overlay validated.",
+  "doorRegions": [
+    {
+      "id": "upper-tall-left",
+      "pixels": [
+        [
+          1076,
+          181
+        ],
+        [
+          1135,
+          181
+        ],
+        [
+          1135,
+          542
+        ],
+        [
+          1076,
+          542
+        ]
+      ],
+      "percent": [
+        [
+          72.215,
+          17.156
+        ],
+        [
+          76.174,
+          17.156
+        ],
+        [
+          76.174,
+          51.374
+        ],
+        [
+          72.215,
+          51.374
+        ]
+      ]
+    },
+    {
+      "id": "upper-tall-right",
+      "pixels": [
+        [
+          1140,
+          181
+        ],
+        [
+          1204,
+          181
+        ],
+        [
+          1204,
+          542
+        ],
+        [
+          1140,
+          542
+        ]
+      ],
+      "percent": [
+        [
+          76.51,
+          17.156
+        ],
+        [
+          80.805,
+          17.156
+        ],
+        [
+          80.805,
+          51.374
+        ],
+        [
+          76.51,
+          51.374
+        ]
+      ]
+    },
+    {
+      "id": "upper-narrow",
+      "pixels": [
+        [
+          1211,
+          176
+        ],
+        [
+          1243,
+          153
+        ],
+        [
+          1243,
+          460
+        ],
+        [
+          1211,
+          466
+        ]
+      ],
+      "percent": [
+        [
+          81.275,
+          16.682
+        ],
+        [
+          83.423,
+          14.502
+        ],
+        [
+          83.423,
+          43.602
+        ],
+        [
+          81.275,
+          44.171
+        ]
+      ]
+    },
+    {
+      "id": "lower-front-nearest",
+      "pixels": [
+        [
+          1327,
+          624
+        ],
+        [
+          1400,
+          648
+        ],
+        [
+          1400,
+          1013
+        ],
+        [
+          1327,
+          923
+        ]
+      ],
+      "percent": [
+        [
+          89.06,
+          59.147
+        ],
+        [
+          93.96,
+          61.422
+        ],
+        [
+          93.96,
+          96.019
+        ],
+        [
+          89.06,
+          87.488
+        ]
+      ]
+    },
+    {
+      "id": "right-drawer-top",
+      "pixels": [
+        [
+          1407,
+          650
+        ],
+        [
+          1490,
+          679
+        ],
+        [
+          1490,
+          767
+        ],
+        [
+          1407,
+          724
+        ]
+      ],
+      "percent": [
+        [
+          94.43,
+          61.611
+        ],
+        [
+          100,
+          64.36
+        ],
+        [
+          100,
+          72.701
+        ],
+        [
+          94.43,
+          68.626
+        ]
+      ]
+    },
+    {
+      "id": "right-drawer-middle",
+      "pixels": [
+        [
+          1407,
+          728
+        ],
+        [
+          1490,
+          772
+        ],
+        [
+          1490,
+          938
+        ],
+        [
+          1407,
+          859
+        ]
+      ],
+      "percent": [
+        [
+          94.43,
+          69.005
+        ],
+        [
+          100,
+          73.175
+        ],
+        [
+          100,
+          88.91
+        ],
+        [
+          94.43,
+          81.422
+        ]
+      ]
+    },
+    {
+      "id": "right-drawer-bottom",
+      "pixels": [
+        [
+          1407,
+          864
+        ],
+        [
+          1490,
+          941
+        ],
+        [
+          1490,
+          1055
+        ],
+        [
+          1435,
+          1055
+        ],
+        [
+          1407,
+          1020
+        ]
+      ],
+      "percent": [
+        [
+          94.43,
+          81.896
+        ],
+        [
+          100,
+          89.194
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          96.309,
+          100
+        ],
+        [
+          94.43,
+          96.682
+        ]
+      ]
+    }
+  ],
+  "hardwareBoxes": [
+    {
+      "id": "upper-tall-left",
+      "box": [
+        1128,
+        432,
+        1136,
+        461
+      ],
+      "percentBox": [
+        75.705,
+        40.948,
+        76.242,
+        43.697
+      ]
+    },
+    {
+      "id": "upper-tall-right",
+      "box": [
+        1141,
+        432,
+        1149,
+        461
+      ],
+      "percentBox": [
+        76.577,
+        40.948,
+        77.114,
+        43.697
+      ]
+    },
+    {
+      "id": "upper-narrow",
+      "box": [
+        1228,
+        424,
+        1238,
+        448
+      ],
+      "percentBox": [
+        82.416,
+        40.19,
+        83.087,
+        42.464
+      ]
+    },
+    {
+      "id": "lower-front-nearest",
+      "box": [
+        1332,
+        648,
+        1377,
+        675
+      ],
+      "percentBox": [
+        89.396,
+        61.422,
+        92.416,
+        63.981
+      ]
+    },
+    {
+      "id": "right-drawer-top",
+      "box": [
+        1418,
+        688,
+        1459,
+        714
+      ],
+      "percentBox": [
+        95.168,
+        65.213,
+        97.919,
+        67.678
+      ]
+    },
+    {
+      "id": "right-drawer-middle",
+      "box": [
+        1416,
+        763,
+        1459,
+        796
+      ],
+      "percentBox": [
+        95.034,
+        72.322,
+        97.919,
+        75.45
+      ]
+    },
+    {
+      "id": "right-drawer-bottom",
+      "box": [
+        1415,
+        910,
+        1460,
+        953
+      ],
+      "percentBox": [
+        94.966,
+        86.256,
+        97.987,
+        90.332
+      ]
+    }
+  ],
+  "notes": [
+    "Fixed crown, toe kicks, island decorative end panel and fixed frames intentionally excluded.",
+    "Foreground nearest door and three right drawers avoid towel occlusion; no lower sink-door masks provided because towel overlaps them.",
+    "Original door pixels include handles: independent hardware motion needs a handle-free door source, otherwise handles duplicate.",
+    "Boxes include local background pixels and are reference bounds, not guaranteed object silhouettes.",
+    "Generated alpha layers rejected; do not import them."
+  ]
+}

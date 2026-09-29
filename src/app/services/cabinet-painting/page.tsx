@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function CabinetPaintingPage() {
   return (
     <>
-      <CompanyHeader isHomePage={false} />
+      <CompanyHeader isHomePage={false} overlayPhotoHero />
       <main id="main-content" tabIndex={-1}>
         <CabinetPaintingDetail />
       </main>

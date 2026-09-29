@@ -1,0 +1,92 @@
+{
+  "method": "built-in image_gen",
+  "date": "2026-09-28",
+  "provenance": "generated-concept",
+  "caption": "Illustrative process — concept imagery, not a completed L&K project",
+  "outputs": [
+    {
+      "name": "prepared",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-97a9297e-a9c4-439d-aca5-7d43cafffe13.png"
+    },
+    {
+      "name": "undercoat",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-6d4311ea-42ee-428f-9f9c-45453d13838f.png"
+    },
+    {
+      "name": "coat-1",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-e59a0949-8ba2-4884-90a5-3cc3feb26e59.png"
+    },
+    {
+      "name": "coat-2",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-825a2c93-6694-44b9-aad8-4ba73af53f9f.png"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "prepared",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional instructional workshop photograph for a cabinet painting process website, no UI. Create ONE 1536x1024 landscape image, 3:2 aspect ratio. Show exactly ONE detached rectangular Shaker cabinet door lying flat, face up on a simple light timber workbench in a quiet neutral workshop. This is a tall rectangular door with a single recessed flat central panel, broad clean stiles and rails, subtle bevel at the inner frame, straight squared outside edges, as found in a classic blue-gray painted kitchen. No installed handle or hinges. View from a fixed three-quarter overhead camera, about 50 degrees down, the whole door entirely inside frame, its long axis running from lower left to upper right, occupying about 75% of the picture. The panel geometry, bench and camera must be easy to preserve through later paint-state edits. PREPARATION STATE: old pale gray-blue finish is carefully sanded matte, a few localized small pale filler patches are flush on the stile and recessed panel; subtle sanded areas are visible, no structural damage, no dramatic ruin. Include only a small plain sanding block and simple unbranded putty knife on the bench off the door, away from the central panel. Controlled soft warm-neutral light from upper left; warm limestone wall softly out of focus behind, realistic detailed wood and sanded paint textures, restrained clean working environment, not a luxury showroom. No people, hands, text, logos, labels, watermarks, extra doors, inset images, comparison panels or graphic overlays. This is a generated process concept, never documentary proof of L&K work. Output only the single full-bleed photograph. Final size 1536x1024."
+    },
+    {
+      "name": "undercoat",
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied workshop photograph. Create the UNDERCOAT state of this exact cabinet door. CHANGE ONLY the visible painted surface of the ONE detached Shaker door: cover the sanded gray-blue paint and every filler patch with an even, pale warm off-white primer/undercoat. It should be dry-looking matte, smoothly opaque, no exposed patch spots, with crisp unchanged recessed panel edges and slight natural surface texture. Keep the identical door geometry, every corner and panel edge at the same pixel coordinates, camera, framing, workbench grain and scratches, sanding block and putty knife positions, neutral wall, light direction, exposure, shadows and focus. Absolutely no movement, recropping, restaging, new items, extra door, text, label, logo, watermarks or person. Do not retouch or repaint the bench or tools. This is a fictional process concept photograph, not a company's completed project record. Preserve source dimensions exactly: 1536x1024. Output only the edited photo.",
+      "input": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-97a9297e-a9c4-439d-aca5-7d43cafffe13.png"
+    },
+    {
+      "name": "coat-1",
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied workshop photograph. Make the FIRST FINISH COAT state of this exact single Shaker cabinet door. CHANGE ONLY its painted face, bevels and visible thickness: replace the off-white undercoat with a first thin coat of muted pale blue-gray cabinet paint, a low-chroma cool slate blue-gray similar to #9DAAAF under this warm-neutral light. Coverage is neat but subtly lighter/less opaque than a completed second coat, with understated thin application variation visible in the large center panel, never drips, blobs, stripes or distress. No filler patches visible. Keep exactly the same door geometry and pixel positions, recessed center and squared frame, camera, framing, workbench wood grain/scratches, sanding block and putty knife positions, wall, light direction, exposure, shadows and focus. Do not move, crop, zoom, add, remove or replace anything. No people, hands, text, numbers, labels, logos, graphic overlays or extra doors. Do not alter the bench or tools. Fictional process concept photograph, not a company's project documentation. Preserve source dimensions 1536x1024 exactly. Output only the edited photo.",
+      "input": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-6d4311ea-42ee-428f-9f9c-45453d13838f.png"
+    },
+    {
+      "name": "coat-2",
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied workshop photograph. Make the FINAL SECOND FINISH COAT state of this exact ONE Shaker cabinet door. CHANGE ONLY the painted door surfaces: the same muted pale blue-gray hue becomes evenly opaque and subtly deeper, approximately low-chroma slate blue-gray #909DA2 under this light, a professional smooth subtle SATIN finish with a restrained soft light reflection across the panel. Remove thin first-coat variation, no visible patches or sanding streaks, but retain believable very fine painted surface texture. Never glossy plastic, mirror gloss, wet pools, drips or heavy brush lines. Keep exactly the same door outline, corner locations, recessed panel geometry, shadow edges, camera, crop, workbench wood grain/scratches, sanding block, putty knife, wall, lighting and all object positions. Do not change the bench or tools. No recropping, movement, extra object, installed handles/hinges, labels, text, logos, people or hands. This is an illustrative fictional process concept, not proof of any company's work. Preserve 1536x1024 source dimensions exactly. Output only the finished edited photograph.",
+      "input": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-e59a0949-8ba2-4884-90a5-3cc3feb26e59.png"
+    }
+  ],
+  "notes": [
+    "Sequential single-target edits; generated object positions visually stable but not guaranteed pixel-identical.",
+    "Single detached Shaker door, no people or identifying branding.",
+    "No code implementation or browser QA performed in this asset task."
+  ],
+  "saved": [
+    {
+      "name": "prepared",
+      "sourceDest": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/prepared.png",
+      "webDest": "/Users/jimee/Desktop/L&K Group/public/images/story/prepared.webp",
+      "width": 1536,
+      "height": 1024,
+      "pngBytes": 2566937,
+      "webpBytes": 119200,
+      "quality": 82
+    },
+    {
+      "name": "undercoat",
+      "sourceDest": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/undercoat.png",
+      "webDest": "/Users/jimee/Desktop/L&K Group/public/images/story/undercoat.webp",
+      "width": 1536,
+      "height": 1024,
+      "pngBytes": 2192736,
+      "webpBytes": 85814,
+      "quality": 82
+    },
+    {
+      "name": "coat-1",
+      "sourceDest": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/coat-1.png",
+      "webDest": "/Users/jimee/Desktop/L&K Group/public/images/story/coat-1.webp",
+      "width": 1536,
+      "height": 1024,
+      "pngBytes": 2194576,
+      "webpBytes": 90294,
+      "quality": 82
+    },
+    {
+      "name": "coat-2",
+      "sourceDest": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/coat-2.png",
+      "webDest": "/Users/jimee/Desktop/L&K Group/public/images/story/coat-2.webp",
+      "width": 1536,
+      "height": 1024,
+      "pngBytes": 2159816,
+      "webpBytes": 92084,
+      "quality": 82
+    }
+  ]
+}

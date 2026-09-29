@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-28",
+  "method": "built-in image_gen",
+  "intent": "edit",
+  "provenance": "generated-concept",
+  "input": "public/images/story/workshop-existing.webp",
+  "prompt": "prompt.txt",
+  "master": "prepared-patched.png",
+  "generatedSource": "/Users/jimee/.codex/generated_images/01a0e107-6a7f-71a1-b28d-9b1557775570/exec-56b849c0-8a48-4b27-b1c5-6a84d145c281.png",
+  "webAsset": "public/images/story/front-v2/prepared-patched.webp",
+  "width": 1536,
+  "height": 1024,
+  "bytes": 112040,
+  "conversion": "Pillow WebP quality84 method6; no creative image edit outside image_gen",
+  "scope": "Step3 cream door localized filler; Step4 starting background. Other scenes/Hero/Home unchanged."
+}

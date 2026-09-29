@@ -10,11 +10,13 @@ L&K Group의 서비스 홈페이지, 온라인 쇼핑몰, ERP·CRM 운영관리 
 
 **현재 착수 순서(2026-09-27): [메인 3일 → Cabinet 약 1주 → Coatly 기반 회사 관리 웹 TODO](docs/plans/15-home-cabinet-admin-todo.md).** 아래 문서들은 전체 사업의 상세 계획이며, 당장 할 일은 이 체크리스트를 먼저 따른다.
 
-**현재 작업: 회사 자료 반영과 메인 SEO 업데이트.** [회사 제공 자료](docs/reference-assets/company-brief.md)에 브랜드·소개·서비스·연락처·지역·사업자 정보와 Cabinet 답변, 첨부 9개를 정리했다. 메인에 실제 전화·이메일 문의와 지역 정보, 회사 로고·홍보 이미지·작업 사진을 반영하고, 연결된 Cabinet 페이지의 기존 연락·지역·공정 안내도 맞춘다. 회사 이메일은 수령됐고 계정 접근·연결/배포 승인·운영 도메인은 대기다. `noindex`는 유지하며 온라인 Free Quote·사진 업로드·AI·예약·인보이스·결제는 [후속 범위](docs/plans/18-kcp-page-prototype.md)다. [메인 디자인 초안](docs/plans/17-home-prototype-design-plan.md)의 최종 승인·적용과 현장별 전후 사례 구성은 별도다.
+**현재 작업(2026-09-29): KCP 시네마틱 디자인 구현·로컬 검증 완료.** 메인은 기존 서비스 소개 프로토타입으로 유지하고, **Kitchen Cabinet Painting 상세에만** 사진형 Hero, 실제 WebGL 9단계 공정과 완료 장면, 전후 비교 슬라이더, 색상·광택 미리보기를 적용했다. [최신 구현 범위](docs/plans/24-cinematic-kitchen-webgl.md), [글로벌 디자인 시스템](docs/plans/21-global-design-system.md), [실제 검증 기록](docs/verification/2026-09-29-cinematic-v3.md)을 따른다. 같은 모델의 문짝·손잡이·힌지를 분리하고 세척·국소 퍼티 보수·프라이머·두 마감 코트·재조립을 가역 스크롤로 연결했다. 모델은 사진을 참고한 건축 컨셉이며 실측 CAD나 실사 재구성은 아니다. 모바일·JavaScript/WebGL 미지원 환경에는 읽을 수 있는 사진과 본문을 제공한다. 전역 토큰과 공용 KitchenScene 렌더러를 콘텐츠에서 분리했다. 현재 프로덕션 미리보기는 [KCP](http://127.0.0.1:3002/services/cabinet-painting) / [메인](http://127.0.0.1:3002)이다.
+
+회사 자료·메인 SEO는 앞서 반영했다. [회사 제공 자료](docs/reference-assets/company-brief.md)를 기준으로 실제 전화·이메일·지역·회사 로고·홍보 이미지·작업 사진을 유지한다. 회사 이메일은 수령됐고 계정 접근·연결/배포 승인·운영 도메인은 대기다. `noindex`는 유지하며 온라인 Free Quote·사진 업로드·AI·예약·인보이스·결제는 [후속 범위](docs/plans/18-kcp-page-prototype.md)다. 현장별 전후 사례 자료·실측 정밀 모델·정량 성능 및 실제 기기 검증은 남아 있다.
 
 Cabinet 상세 `/services/cabinet-painting`의 6개 서비스·적합성·포함/제외·공정·컨셉 사례·FAQ 최초 구성은 [SEO·지역 개정](docs/plans/19-kcp-seo-content-and-service-area.md)과 [이전 검증](docs/verification/2026-09-27-kcp-seo-content.md)을 참조한다. 회사가 제공한 최신 서비스 지역은 기존 지도 조사의 제한적인 후보 목록보다 우선한다.
 
-회사 자료·실제 이미지 반영 후 lint·타입·production build와 1440·768·390·320px 메인 브라우저 확인을 마쳤다. 확인 범위·남은 의존성과 화면은 [최신 검증 기록](docs/verification/2026-09-27-home-company-content.md)을 따른다.
+회사 자료·실제 이미지 반영 후 lint·타입·production build와 1440·768·390·320px 메인 브라우저 확인을 마쳤다. 회사 자료 반영 당시 기록은 [이전 검증](docs/verification/2026-09-27-home-company-content.md), 이번 디자인 검증은 [2026-09-28 기록](docs/verification/2026-09-28-scroll-storytelling.md)을 따른다.
 
 ## 로컬 앱 실행
 
@@ -55,6 +57,11 @@ npm run dev
 | [17 메인 프로토타입·디자인](docs/plans/17-home-prototype-design-plan.md) | 구현 범위, DDD 조립, 디자인 초안, SEO·QA 기준 |
 | [18 KCP 상세 프로토타입](docs/plans/18-kcp-page-prototype.md) | 6개 서비스 카테고리, 메인 연결, Free Quote 표시, 후속 견적·AI·예약 흐름 |
 | [19 KCP SEO·지역 콘텐츠](docs/plans/19-kcp-seo-content-and-service-area.md) | Google Maps 지역 조사, 10km 반경, 임시 회사 정보 표시·교체 기준 |
+| [20 승인 디자인·스크롤 스토리 구현](docs/plans/20-scroll-storytelling-implementation-plan.md) | 최초 계획과 최신 KCP 상세 전용 범위, 자산·재사용·SEO·검수 |
+| [21 글로벌 디자인 시스템](docs/plans/21-global-design-system.md) | 공통 색상·서체·크기·굵기·여백·버튼·모션 토큰과 적용 규칙 |
+| [22 KCP 전체 화면 공정](docs/plans/22-cinematic-cabinet-story.md) | 메인 프로토타입 유지, KCP Hero·공정 우선 배치·사진 레이어·표현 한계 |
+| [23 정면 캐비넷 깊이 연출](docs/plans/23-front-cabinet-depth-story.md) | Concept 2 공정 사진, 6개 도어·원본 배경 합성·절제된 입체 움직임 |
+| [24 시네마틱 WebGL 공정](docs/plans/24-cinematic-kitchen-webgl.md) | 실제 3D 9단계 공정, 전후 비교, 색상·광택, 정적 대체와 최신 검증 |
 
 클라이언트 전달본은 [Word 구현계획서](deliverables/LK_Group_Client_Implementation_Plan_KO.docx)이며, 편집 가능한 원문은 [클라이언트 제안서 Markdown](docs/client-proposal.md)이다. 기술 기준은 위 개발 문서가 원본이며, 클라이언트 문서를 변경할 때 관련 개발 문서도 함께 갱신한다. 문서 자체의 확인 결과는 [검증 기록](docs/document-validation.md)에 정리했다.
 

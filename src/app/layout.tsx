@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { siteAssets } from "@/shared/config/assets";
 import { siteConfig } from "@/shared/config/site";
+import { manrope } from "@/shared/config/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang={siteConfig.language}>
+    <html lang={siteConfig.language} className={manrope.variable}>
       <body>{children}</body>
     </html>
   );

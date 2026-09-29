@@ -1,0 +1,69 @@
+{
+  "method": "built-in image_gen",
+  "date": "2026-09-28",
+  "provenance": "generated-concept",
+  "conceptNotice": "Illustrative process — concept imagery, not a completed L&K project.",
+  "target": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/undercoat.png",
+  "colorReference": "/Users/jimee/Desktop/L&K Group/concept 2.png",
+  "outputs": [
+    {
+      "name": "coat-1",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-5b4dcb42-4a98-43de-a5b6-d968eef50857.png",
+      "alt": "Generated concept of a detached Shaker cabinet door with a matte sage olive-greige first finish coat on a workbench."
+    },
+    {
+      "name": "coat-2",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-84d77fe6-cc85-43c1-9d16-d7edea8f386e.png",
+      "alt": "Generated concept of the same detached Shaker cabinet door with an even sage olive-greige satin finish on a workbench."
+    }
+  ],
+  "prompts": [
+    {
+      "name": "coat-1",
+      "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET: a single detached white-primed Shaker cabinet door on a timber workbench. Image 2 is COLOR REFERENCE ONLY: use the kitchen cabinets' muted sage / olive-greige paint hue from that reference, never its layout, text, objects or lighting. Create the FIRST FINISH COAT state of Image 1. Change ONLY the visible painted face, bevel and edge thickness of the single door from pale primer to a restrained low-chroma sage-gray with a warm olive-greige undertone matching the reference cabinetry in equivalent warm neutral light. This first coat should be matte and slightly lighter/less rich than a completed final coat; coverage tidy, very subtle application variation, no dramatic streaks, bare patches, drips or damage. It must not look blue, cyan, mint green, saturated green or brown. Preserve Image 1's exact door geometry, recessed single-panel profile, all corner positions and long-axis diagonal, workbench grain and scratches, sanding block and putty knife positions, wall texture, camera, lens, crop, shadows and controlled warm-neutral lighting. Photorealistic calm workshop texture, not glossy plastic or dramatic CGI. No people, hands, handles, hinges, new objects, text, labels, logos, graphic overlays, UI or extra door. The entire environment is unchanged; this is solely a door paint-state edit. Generated instructional concept, not a real contractor portfolio record. Preserve source size exactly 1536x1024 landscape. Output only the one edited photograph.",
+      "inputs": [
+        "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/undercoat.png",
+        "/Users/jimee/Desktop/L&K Group/concept 2.png"
+      ]
+    },
+    {
+      "name": "coat-2",
+      "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET and geometric master: the single white-primed Shaker door on the workbench. Image 2 is cabinet COLOR REFERENCE ONLY: its muted sage / olive-greige kitchen cabinetry. Image 3 shows the matched FIRST COAT already made for this exact workshop composition. Create the SECOND AND FINAL FINISH COAT state. Change ONLY the painted face, bevels and visible edge thickness of Image 1's door: reproduce Image 3's restrained warm sage-gray / olive-greige color family, just subtly deeper and richer with full even opacity and a refined smooth SATIN finish. Remove faint first-coat coverage variation, leaving very fine believable painted texture and one understated soft light reflection, no glare. The result should pair calmly with the reference's sage cabinets; no blue/cyan shift, saturated green, strong gloss, wet coating, plastic look, dramatic CGI or brush streaks. Match Image 1's precise door outline, panel profile, all corners, camera, diagonal orientation, lens and crop, workbench texture, sanding block and putty knife positions, wall, lighting, shadows and object positions unchanged. Do not add handles, hinges, objects, hands, people, text, labels, numbers, branding, UI, graphic overlays or extra doors. Entire environment is unchanged, only this one door's paint state changes. Generated illustrative process concept, not an actual contractor's work record. Output one full photograph exactly 1536x1024 landscape, same canvas as Image 1.",
+      "inputs": [
+        "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/undercoat.png",
+        "/Users/jimee/Desktop/L&K Group/concept 2.png",
+        "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-5b4dcb42-4a98-43de-a5b6-d968eef50857.png"
+      ]
+    }
+  ],
+  "notes": [
+    "Two image_gen calls, one per requested state.",
+    "Each generated output visually inspected. Workbench, one-door profile, tools and lighting remain visually aligned; generative edits do not guarantee pixel-identical texture.",
+    "Only format conversion to WebP quality 84; no resizing, cropping, creative post-processing or code changes.",
+    "Original blue-gray assets preserved."
+  ],
+  "saved": [
+    {
+      "name": "coat-1",
+      "master": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story-front-v2/coat-1.png",
+      "web": "/Users/jimee/Desktop/L&K Group/public/images/story/front-v2/coat-1.webp",
+      "width": 1536,
+      "height": 1024,
+      "pngBytes": 2158857,
+      "webpBytes": 95224,
+      "quality": 84,
+      "hasAlpha": false
+    },
+    {
+      "name": "coat-2",
+      "master": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story-front-v2/coat-2.png",
+      "web": "/Users/jimee/Desktop/L&K Group/public/images/story/front-v2/coat-2.webp",
+      "width": 1536,
+      "height": 1024,
+      "pngBytes": 2167984,
+      "webpBytes": 102624,
+      "quality": 84,
+      "hasAlpha": false
+    }
+  ]
+}

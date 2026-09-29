@@ -1,0 +1,106 @@
+{
+  "method": "built-in image_gen",
+  "date": "2026-09-28",
+  "provenance": "generated-concept",
+  "original": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/kitchen-finished.png",
+  "originalDimensions": {
+    "width": 1490,
+    "height": 1055
+  },
+  "outputs": [
+    {
+      "name": "kitchen-assemble-background",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-c177007b-ad93-43d3-95ae-7540b5c219fc.png",
+      "publicName": "assemble-background"
+    },
+    {
+      "name": "assemble-doors-rejected",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-1f4de149-07aa-43dc-9617-472cbc45be52.png"
+    },
+    {
+      "name": "assemble-hardware-rejected",
+      "source": "/Users/jimee/.codex/generated_images/01a0e774-2b45-7081-b91e-5a5fce74de30/exec-81d8e435-0101-4684-b1e2-60afa56aa506.png"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "kitchen-assemble-background",
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied finished blue-gray galley kitchen photograph. Produce a CLEAN BACKGROUND PLATE for a registered cabinet reassembly animation. Preserve EXACT source full canvas 1490x1055, identical camera/crop, perspective and every fixed pixel position. Remove ONLY every visible movable cabinet door and drawer front and ALL brass cabinet handles, revealing empty natural pale wood cabinet interiors, shelves and drawer carcass openings. Keep existing fixed blue-gray face frames, end panels, side panels, crown moldings, toe kicks, cabinet structure, marble counters, backsplash, sink/tap, lights, stools, plants, vase, fruit, rug, windows, central doorway, furniture and room EXACTLY unchanged. In particular keep the large non-opening decorative island end panel behind the stools; remove only actual opening door and drawer fronts from the cabinets along the right wall, rear tall cabinet and visible narrow working side of the island. Handle removal refers only to cabinet hardware; the brass faucet and pendant fittings remain. Door removal should expose physically coherent cabinet openings, not demolish or redesign the kitchen. Do not move any original object or change lighting, color grading or shadows of fixed objects. No people, tools, labels, text, logos, UI, marks, new decorative objects or changes to architecture. Output one full-bleed photo exactly 1490x1055, no borders, no collage. This is a generated instructional concept, not actual contractor evidence.",
+      "input": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/kitchen-finished.png"
+    },
+    {
+      "name": "assemble-doors",
+      "prompt": "Use case: background-extraction. Source/edit target: the ORIGINAL supplied finished kitchen photograph. Extract a precise REGISTERED TRANSPARENT OVERLAY of ONLY the visible movable blue-gray cabinet doors and drawer fronts. Output must preserve the full original 1490x1055 canvas and original x/y positions, scale, perspective, lighting, colors and visible silhouettes of every extracted front. This is NOT a collection layout: do not relocate, arrange, straighten, rotate, resize or center any part. Full transparent margins and gaps must remain. Include door/drawer fronts on the right wall cabinet run, rear tall cabinet behind the vase, and the narrow working side of the island. Remove every brass cabinet handle from the extracted fronts, filling only the tiny handle areas with matching plain blue-gray paint. Exclude all fixed face frames, structural stiles, crown moldings, side panels, decorative island end panel, counters, sink/tap, shelves, room, walls, stools, floor, plants, fruits and lights: those pixels must be transparent alpha. Preserve source occlusions: where the vase, plant or towel hides a door, do NOT invent visible door pixels in front of those objects; leave those foreground-occluded areas transparent. Do not include handles, hinges or cast shadows on the surrounding room. One combined doors layer, no separate tiles. Absolutely no background color, checkerboard painted into pixels, text, labels, logos or border. GENUINE TRANSPARENT BACKGROUND alpha. Output at exactly source dimensions 1490x1055 without trimming the transparent bounds.",
+      "input": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/kitchen-finished.png"
+    },
+    {
+      "name": "assemble-hardware",
+      "prompt": "Use case: background-extraction. Source/edit target: the supplied ORIGINAL finished kitchen photo. Make ONE combined REGISTERED HARDWARE transparent overlay. Extract ONLY the small brass CABINET handles/pulls and visible cabinet hinge parts, keeping each at its EXACT original image x/y position, original tiny size, perspective, original brass color and shading. Preserve the full 1490x1055 source canvas, do not crop or trim transparent margins, do not rearrange the hardware into a product sheet. Entire room and all cabinet doors, wood, counters, windows, plants, stools and every other non-hardware pixel must be fully transparent. DO NOT include the brass faucet, soap pump, hanging pendant stems or lighting fittings: cabinet handles only. Keep the two small vertical pulls on the tall upper right cabinet, all horizontal drawer pulls and vertical base-door pulls on the right wall, and visible tiny handles on the narrow island side. For the illustrative reassembly concept also include TWO small understated silver concealed-hinge components adjacent to the outer LEFT edge of the upper-right tall pair of doors, one beside the upper quarter and one beside the lower quarter; align these representative hinges naturally with that door at its original size, not floating enlarged. The added hinge detail is illustrative only, not photo evidence. No labels, text, logos, headings, borders, frame, background color or baked checkerboard. GENUINE transparent alpha background with just the hardware. Full exact source canvas 1490x1055. Do not add any cabinet panel or context shadow. Output one combined overlay image only.",
+      "input": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/kitchen-finished.png"
+    }
+  ],
+  "notes": [
+    "Three calls total; no additional generation after parent rejected alpha layer extraction.",
+    "Doors alpha rejected: includes fixed island and right cabinet side panels; fills original foreground occlusions; not fit for exact photographic reassembly.",
+    "Hardware alpha not accepted for production; generated representative hinges are illustrative.",
+    "Only clean plate optimized to public. Rejected original PNGs preserved in docs only.",
+    "Parent authorized normalization of ±1px output canvas to 1490x1055."
+  ],
+  "saved": [
+    {
+      "name": "kitchen-assemble-background",
+      "master": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/kitchen-assemble-background.png",
+      "width": 1491,
+      "height": 1055,
+      "hasAlpha": false,
+      "bytes": 1989077,
+      "nontransparentBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1491,
+        "height": 1055
+      },
+      "transparentPixels": 0,
+      "nonOpaquePixels": 0,
+      "public": {
+        "path": "/Users/jimee/Desktop/L&K Group/public/images/story/assemble-background.webp",
+        "width": 1490,
+        "height": 1055,
+        "bytes": 132370,
+        "quality": 82
+      }
+    },
+    {
+      "name": "assemble-doors-rejected",
+      "master": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/assemble-doors-rejected.png",
+      "width": 1490,
+      "height": 1055,
+      "hasAlpha": true,
+      "bytes": 555124,
+      "nontransparentBBox": {
+        "x": 33,
+        "y": 37,
+        "width": 1457,
+        "height": 1018
+      },
+      "transparentPixels": 1144947,
+      "nonOpaquePixels": 1570287
+    },
+    {
+      "name": "assemble-hardware-rejected",
+      "master": "/Users/jimee/Desktop/L&K Group/docs/design-assets/cabinet-story/assemble-hardware-rejected.png",
+      "width": 1491,
+      "height": 1055,
+      "hasAlpha": true,
+      "bytes": 61360,
+      "nontransparentBBox": {
+        "x": 161,
+        "y": 265,
+        "width": 1298,
+        "height": 733
+      },
+      "transparentPixels": 1563055,
+      "nonOpaquePixels": 1572922
+    }
+  ]
+}

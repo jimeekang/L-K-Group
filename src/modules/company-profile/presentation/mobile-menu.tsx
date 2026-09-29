@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import type { NavigationItem } from "@/shared/config/navigation";
 
-export function MobileMenu({ items }: { items: readonly NavigationItem[] }) {
+export function MobileMenu({ items, photo = false }: { items: readonly NavigationItem[]; photo?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
@@ -43,7 +43,9 @@ export function MobileMenu({ items }: { items: readonly NavigationItem[] }) {
       <button
         ref={triggerRef}
         type="button"
-        className="flex h-11 w-11 items-center justify-center rounded-sm border border-border hover:bg-surface"
+        className={photo
+          ? "flex h-12 w-12 items-center justify-center rounded-full border border-border-strong bg-surface/80 hover:bg-surface"
+          : "flex h-11 w-11 items-center justify-center rounded-sm border border-border hover:bg-surface"}
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
         aria-controls="mobile-navigation"
@@ -55,13 +57,17 @@ export function MobileMenu({ items }: { items: readonly NavigationItem[] }) {
         id="mobile-navigation"
         aria-label="Mobile navigation"
         hidden={!isOpen}
-        className="absolute top-full right-0 left-0 z-30 border border-border bg-background p-3 shadow-sm"
+        className={photo
+          ? "absolute top-full right-0 left-0 z-30 border border-border bg-surface p-3 shadow-lg"
+          : "absolute top-full right-0 left-0 z-30 border border-border bg-background p-3 shadow-sm"}
       >
         {items.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="block rounded-sm px-4 py-3 text-base font-medium hover:bg-surface"
+            className={photo
+              ? "flex min-h-12 items-center rounded-sm px-4 py-3 text-nav hover:bg-background"
+              : "block rounded-sm px-4 py-3 text-base font-medium hover:bg-surface"}
             onClick={() => navigateToSection(item.href)}
           >
             {item.label}

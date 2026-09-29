@@ -1,0 +1,61 @@
+{
+  "reference": "concept 2.png",
+  "method": "built-in image_gen",
+  "provenance": "generated-concept",
+  "newAssetCount": 7,
+  "webpTotalBytes": 887238,
+  "assets": [
+    {
+      "path": "public/images/story/front-v2/assemble-background.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 134944
+    },
+    {
+      "path": "public/images/story/front-v2/coat-1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 95224
+    },
+    {
+      "path": "public/images/story/front-v2/coat-2.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 102624
+    },
+    {
+      "path": "public/images/story/front-v2/kitchen-existing.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 150130
+    },
+    {
+      "path": "public/images/story/front-v2/kitchen-finished.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 155776
+    },
+    {
+      "path": "public/images/story/front-v2/kitchen-removed.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 136500
+    },
+    {
+      "path": "public/images/story/front-v2/prepared-patched.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 112040
+    }
+  ],
+  "reuse": [
+    "public/images/story/workshop-existing.webp",
+    "public/images/story/undercoat.webp"
+  ],
+  "notes": [
+    "App Hero remains the previous approved image. Only process story uses front-v2.",
+    "Generated background is used only within selected stationary cavity masks over registered original photography during animation.",
+    "Six visible fronts move; the hood-right door partially behind the pendant remains fixed. Handles travel with door photos; no independent hinge or handle model.",
+    "2026-09-28 correction: preparation keeps cream old paint and shows localized filler repairs. Prompt/provenance in ../cabinet-story-patching/manifest.json."
+  ]
+}

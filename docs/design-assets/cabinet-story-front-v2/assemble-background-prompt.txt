@@ -1,0 +1,14 @@
+Generation mode: built-in image_gen edit
+Source: kitchen-finished.png
+
+Use case: precise-object-edit
+Asset type: cabinet assembly animation clean plate, opaque PNG, exact 1536 x 1024 landscape.
+Input image 1 is the EDIT TARGET. Keep this photograph and camera locked; do not redesign or re-render the room.
+Primary request: remove exactly SEVEN selected sage-green cabinet front panels and their attached knobs/handles from this exact photo, leaving their cabinet carcasses and realistic quiet, empty interiors with a few tidy empty shelves visible. Do not show any detached or floating doors.
+Selection in original 1536x1024 coordinates:
+A. The TWO short cabinet doors directly above the center rangehood, roughly x748–831 and x832–916, y190–327. Remove both short fronts and the two round knobs; keep the hood below intact.
+B. The TWO RIGHTMOST ordinary tall upper-wall shaker doors immediately LEFT of the far-right integrated tall cabinet, roughly x1013–1103 and x1104–1195, y165–366. Remove both doors and attached knobs. Crucially KEEP CLOSED the adjacent upper-wall door immediately to their left, x919–1011, which sits behind the right brass pendant. All doors further left behind the large leafy vase and left pendant must remain CLOSED and exactly unchanged.
+C. The THREE stacked front panels of the far-right tall integrated cabinet: the short TOP front x1223–1369 y90–276; the tall MIDDLE front x1223–1370 y274–514; and the short BOTTOM front x1223–1371 y512–677. Remove those three fronts and any handles attached to them. Show plain, empty shelf cavities inside this cabinet, not an appliance or stored objects. Keep the fluted vertical casing to its left, overall outer cabinet silhouette, and dark bottom grille intact.
+There are exactly seven removed panels total: 2+2+3. Retain all remaining cabinetry, all island panels, left units, all other knobs, wall, ceiling, floor, windows, sunlight, shadows, brass pendants, vase and leaves, fruit, bowls, stools, sink and taps, splashback, cooktop and hood, dining furniture, archway, and background decor exactly as in the input. Every fixed object's size, silhouette, location, colour and focus must remain unchanged. Preserve the source's architectural straight lines and exact perspective. This is a surgical clean plate needed for a pixel-aligned overlay animation.
+Interior finish: understated light neutral beige cabinet boxes with natural shadow and convincing depth, subtle empty shelves, no appliances or labeled objects. No text, no graphics, no captions, no logos, no borders. Output 1536x1024.
+

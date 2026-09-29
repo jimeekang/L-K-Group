@@ -1,0 +1,27 @@
+{
+  "method": "built-in image_gen edit",
+  "conversion": "Pillow WebP quality84 method6; no creative post-processing",
+  "provenance": "generated-concept",
+  "assets": [
+    {
+      "name": "cleaning",
+      "master": "docs/design-assets/cabinet-cinematic-v3/cleaning.png",
+      "runtime": "public/images/story/cinematic-v3/cleaning.webp",
+      "source": "/Users/jimee/.codex/generated_images/01a0e107-6a7f-71a1-b28d-9b1557775570/exec-0a670b65-3ab8-497a-90fe-147c1da25937.png",
+      "prompt": "docs/design-assets/cabinet-cinematic-v3/cleaning-prompt.txt",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 126476
+    },
+    {
+      "name": "masking",
+      "master": "docs/design-assets/cabinet-cinematic-v3/masking.png",
+      "runtime": "public/images/story/cinematic-v3/masking.webp",
+      "source": "/Users/jimee/.codex/generated_images/01a0e107-6a7f-71a1-b28d-9b1557775570/exec-b840d72e-cff1-41cb-9b2a-8c3f03db7a58.png",
+      "prompt": "docs/design-assets/cabinet-cinematic-v3/masking-prompt.txt",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 107600
+    }
+  ]
+}

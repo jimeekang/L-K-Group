@@ -61,3 +61,13 @@ model_reasoning_effort = "xhigh"
 - 관련 파일만 검색·읽고 독립적인 조회는 묶어서 수행한다. 전체 문서 반복 읽기, 근거 없는 대량 재생성, 불필요한 모델·에이전트 병렬 실행을 피한다.
 - 합의된 명세를 작은 검증 단위로 구현한다. 통과한 검사를 새 변경이나 위험 없이 반복하지 않는다. 단순 표시 문구를 그대로 복제하는 테스트는 추가하지 않는다.
 - 결과에는 변경 내용·검증 증거·남은 결정만 간결하게 기록한다. TODO 완료 표시는 실제 구현·검증 수준과 일치시킨다.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

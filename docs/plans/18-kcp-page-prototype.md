@@ -1,5 +1,7 @@
 # Kitchen Cabinet Painting 상세 프로토타입
 
+**2026-09-28 최신 상태:** 사용자 최종 정정으로 메인은 기존 프로토타입을 유지하고 KCP 상세에만 사진형 Hero·전체 화면 7단계 공정을 적용했다. 기존 서비스·지역·FAQ·8개 앵커는 유지한다. [최종 명세](22-cinematic-cabinet-story.md)와 [이번 검증](../verification/2026-09-28-scroll-storytelling.md)을 따른다. 아래는 최초 프로토타입/콘텐츠 기록이다.
+
 2026-09-27 · 현재 사용자 요청으로 Cabinet 상세 **로컬 프로토타입**을 별도 브랜치에서 선행한다. 메인 최종 디자인 승인을 뜻하지 않는다. 기준 사진은 `public/images/kitchen-cabinet-concept.png`다.
 
 **프로토타입 구현·검증 완료.** `codex/kcp-page-prototype` 브랜치에서 로컬 코드 검사와 4개 폭의 실제 브라우저 확인을 마쳤다. [검증 결과와 미검증 범위](../verification/2026-09-27-kcp-prototype.md)를 따른다.

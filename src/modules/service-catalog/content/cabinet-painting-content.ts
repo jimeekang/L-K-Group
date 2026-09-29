@@ -146,36 +146,9 @@ export const cabinetPaintingContent = {
     confirmation: "[Company to confirm: preparation allowance, included faces and hardware handling]",
   },
   process: {
-    title: "How cabinet painting is planned",
+    title: "The kitchen cabinet painting process",
     introduction:
       "Cabinet doors are removed, spray-painted and dried in a separate spray booth, reducing dust and paint odours in your home. L&K uses Dulux Aqua Enamel. Work and drying generally take 3–7 days, with careful use recommended for 7 days after reinstallation; the exact schedule and care guidance depend on your project.",
-    steps: [
-      {
-        title: "Assess the cabinets",
-        description:
-          "Review the material, existing finish, condition, access and surfaces you want to change. Identify any concerns that could affect suitability.",
-      },
-      {
-        title: "Agree the scope",
-        description:
-          "List included faces and components, repairs, colour and finish. Colours can be selected to suit your home, with the final colour and sheen agreed before painting. Confirm exclusions, price and how any extra work would be approved.",
-      },
-      {
-        title: "Prepare the surfaces",
-        description:
-          "Protect adjacent areas and remove cabinet doors for booth painting. Match cleaning, repairs and preparation to the assessed surface and the selected coating instructions.",
-      },
-      {
-        title: "Apply the agreed finish",
-        description:
-          "Spray-paint and dry cabinet doors in the separate booth. Confirm the Dulux Aqua Enamel product, surface preparation, coat schedule and method for fixed frames and panels for your project.",
-      },
-      {
-        title: "Reassemble and inspect",
-        description:
-          "Reassemble when the finish is ready and review the agreed work. Use the cabinets carefully for 7 days after reinstallation, following the project’s specific care and return-to-use advice.",
-      },
-    ],
     confirmations: [
       "[Company to confirm: exact product, sheen, preparation system and coat schedule]",
       "[Company to confirm: fixed-surface work and kitchen access arrangements]",
