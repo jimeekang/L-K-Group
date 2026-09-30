@@ -54,6 +54,10 @@ flowchart LR
   FoodOrder --> ERP
 ```
 
+## KCP 견적 화면 개정 — 2026-09-30
+
+KCP는 [18번 제품 흐름](18-kcp-page-prototype.md)과 [25번 실행 계획](25-kcp-quote-to-booking-implementation.md)을 우선한다. 전용 `/quote/start?service=cabinet-painting`에서 서비스·사진 → AI 관찰 → 범위·가격 → 희망일·연락처·확인으로 진행하고, 회사 duration 검토·최종 견적 수락·확정 예약·청구로 이어지는 안이다. 아래 일반 견적 화면의 ‘주소부터 결과’ 순서는 KCP에 그대로 적용하지 않는다. 입력 필수값과 사진 단계 진입 조건은 P0에서 구체화한다.
+
 ## 페이지별 구성
 
 | 화면 | 첫 화면에서 답할 질문 | 주요 구성과 행동 |

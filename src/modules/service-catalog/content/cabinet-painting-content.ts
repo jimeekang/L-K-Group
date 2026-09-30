@@ -4,7 +4,7 @@ export const cabinetPaintingContent = {
   status: "draft-company-review",
   draftLabel: "Preview — project-specific details to confirm",
   previewNotice:
-    "Website preview with company-provided service and contact information. Draft package inclusions, prices and project-specific arrangements still need confirmation. Cabinet example images are generated concepts; online quotes and bookings are not available.",
+    "Website preview with company-provided service and contact information. Draft package inclusions, prices and project-specific arrangements still need confirmation. Cabinet example images are generated concepts; a local request form is available, while prices and bookings are not confirmed online.",
   serviceName: "Kitchen Cabinet Painting",
   title: "Kitchen Cabinet Painting in Ermington",
   metadataDescription:
@@ -17,7 +17,7 @@ export const cabinetPaintingContent = {
   quoteLabel: "Free Quote",
   contactLabel: `Contact ${companyContent.contact.person}`,
   quoteStatus:
-    `Online quotes are coming soon. Contact ${companyContent.contact.person} by phone or email to discuss your cabinets and request a quote.`,
+    "The request form records project details in this local preview for company review. It does not calculate a price, upload photos, send email or reserve a date.",
   conceptCaption: "Generated concept — not a completed L&K project.",
   categoriesTitle: "Cabinet painting services",
   categoriesIntroduction:
@@ -220,7 +220,7 @@ export const cabinetPaintingContent = {
     {
       question: "How do I request a free quote?",
       answer:
-        `Contact ${companyContent.contact.person} on ${companyContent.contact.phone} or email ${companyContent.contact.email}. For cabinet enquiries, have the door count and a photo showing the whole cabinet area ready to discuss. Online Free Quote, photo uploads and bookings are still being prepared; this preview does not calculate prices or reserve dates.`,
+        `Use the request form to describe your existing cabinets and provide a door count if known, or contact ${companyContent.contact.person} on ${companyContent.contact.phone} or email ${companyContent.contact.email}. Photos can be discussed later. This local preview does not calculate prices, send an email or reserve dates.`,
     },
   ],
   closing: {

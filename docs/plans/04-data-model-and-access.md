@@ -1,5 +1,9 @@
 # 데이터 모델과 권한
 
+**2026-09-30 KCP 개정:** [25번 계획](25-kcp-quote-to-booking-implementation.md)의 P0에서 아래 후보를 Coatly와 대조하고, 작성 초안·업로드 권한·AI 입력 버전·예약 요청과 확정 예약의 분리를 설계한다. KCP AI 데이터는 일반 C 단계까지 미루지 않고 P4에 도입한다. 실제 스키마·migration 구현은 미수행이다.
+
+P0 정적 대조·구체 계약은 [26번](26-kcp-p0-contracts-and-reuse.md)에 작성했다. 사용자 확정 Google Calendar 양방향 연동은 [27번](27-kcp-google-calendar-sync.md)의 회사/자원 binding·이벤트 mapping·변경 요청·동기화 상태를 추가한다. OAuth credential은 브라우저 접근 불가인 서버 전용 저장 경계에 둔다.
+
 ## 공통 규칙
 
 고객·상품·주소의 현재 값과 거래 시점의 값을 구분한다. 견적·주문·인보이스에는 이름·주소·품목·가격·세금·약관 버전의 스냅샷을 보관한다. 상품 이름이나 가격이 바뀌어도 과거 거래 내용은 바뀌지 않는다.
@@ -21,14 +25,18 @@
 | AI | ai_assessments, damage_observations | 모델·프롬프트·스키마 버전, 관찰·근거·평가·검토 결과 |
 | 견적 | quotes, quote_versions, quote_lines, quote_acceptances | quote+version 유일, 총액 hash, 서명 시각·약관 hash |
 | 예약 | bookings, booking_resources, availability_rules, slot_holds | 견적 버전, 작업·방문 유형, 시작·종료·버퍼·만료 |
+| KCP 예약 요청 | booking_requests (후보) | 희망일·관련 문의/견적·검토 상태·회사 제안 기간/자원; 요청만으로 확정 자원을 점유하지 않음 |
 | 현장 | jobs, job_tasks, job_photos, variations | 작업 상태, 배정, 완료 증거, 변경 승인 |
+| KCP 프로젝트 완료 | projects, project_completion_records (후보) | 전체 작업 묶음·revision·completed_at·행위자·중복키. 소유자 권한 사용자의 Complete로 완료 사건 기록, 청구 상태와 분리 |
 | 카탈로그 | products, product_variants, product_options | SKU 유일, 사업 단위, 배송 그룹, 세금 코드 |
 | 제조 | kit_bom, production_orders, artwork_approvals | BOM 버전·구성 수량, 제작 상태, 승인 버전 |
 | 식품 | food_batches, batch_quality_checks | 제조일·기한·로트·판매 가능 상태·알레르겐 버전 |
 | 재고 | inventory_locations, inventory_movements, inventory_reservations | 이동 원장, 예약 만료, SKU·배치·수량·원인 |
 | 주문 | carts, orders, order_lines, fulfilments, returns | 품목 스냅샷, 상태, 배송 그룹, 반환·폐기 구분 |
 | 결제 | payment_attempts, payments, payment_allocations, refunds | provider ID 유일, 통화·금액, 청구 배분, 환불 한도 |
-| 청구 | invoices, invoice_lines, credit_notes | 법인+문서번호 유일, 발행 후 수정 제한 |
+| 청구 | invoices, invoice_lines, credit_notes | 법인+문서번호 유일, KCP 회사/프로젝트 최종 인보이스 유일·완료 사건 참조, 실제 issued_at/issued_on·due_on, 발행 후 수정 제한 |
+| 청구 날짜 계획 | invoice_plans | KCP 최종 청구는 Complete 기준·발행일 +3 달력일(Sydney) 규칙 버전. 예상 발행/납기는 실제 발행·납기/paid_at과 분리 |
+| Calendar | calendar_connections, calendar_bindings, calendar_event_links, calendar_sync_cursors, calendar_watch_channels, calendar_change_requests | company/calendar/event+generation mapping 유일, etag·업무 revision·syncToken·channel 만료, 검증 후 변경 |
 | 자동화 | webhook_events, outbox_events, job_attempts, message_deliveries | provider+event_id 유일, 시도·오류·처리 결과 |
 | 감사 | audit_events, reconciliation_runs | 행위자·사유·변경 요약·관련 ID; 삭제 제한 |
 
@@ -70,6 +78,7 @@ erDiagram
 | 객체 | 주요 정상 경로 | 예외 경로 |
 | --- | --- | --- |
 | 문의 | submitted → reviewing → quoted → closed | needs_info, out_of_area, spam |
+| KCP 예약 요청 | requested → reviewing → proposed → converted | needs_info, unavailable, cancelled; converted는 유효 예약 연결 후만 허용 |
 | 견적 버전 | draft → approved → sent → accepted | rejected, expired, superseded |
 | 예약 | held → payment_pending → confirmed → completed | expired, cancelled, reschedule_requested |
 | 작업 | scheduled → in_progress → completion_review → completed | blocked, variation_pending, rework |
@@ -77,7 +86,7 @@ erDiagram
 | 식품 배치 | pending_release → available → depleted | quarantine, expired, recalled |
 | 인보이스 | draft → issued → partially_paid → paid | void(허용 조건), overdue, credit_issued |
 
-사용자 화면의 라벨과 내부 상태는 구분한다. 상태 변경 함수는 이전 상태·행위자·버전·선행 조건을 검사하고 불법 전이는 오류로 반환한다. paid 이전 주문을 출고할 수 없고 사진 AI 결과가 도착했다는 사실만으로 accepted로 전이할 수 없다.
+사용자 화면의 라벨과 내부 상태는 구분한다. 상태 변경 함수는 이전 상태·행위자·버전·선행 조건을 검사하고 불법 전이는 오류로 반환한다. paid 이전 주문을 출고할 수 없고 사진 AI 결과가 도착했다는 사실만으로 accepted로 전이할 수 없다. 위 예약 정상 경로는 예약금 필요 시의 예이며, 예약금 불필요 정책에서는 고객 수락·전체 기간 확보 후 confirmed로 전이할 수 있다. 정책 미정 상태에서 이를 임의 활성화하지 않는다. 제출 전 작성 초안과 AI 작업 상태는 문의 submitted와 분리해 P0에서 계약을 정한다.
 
 ## 접근 제어
 

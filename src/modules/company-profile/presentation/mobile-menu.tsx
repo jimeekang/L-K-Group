@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import type { NavigationItem } from "@/shared/config/navigation";
+import { siteRoutes } from "@/shared/config/navigation";
 
 export function MobileMenu({ items, photo = false }: { items: readonly NavigationItem[]; photo?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +74,7 @@ export function MobileMenu({ items, photo = false }: { items: readonly Navigatio
             {item.label}
           </a>
         ))}
+        {photo && <a href={siteRoutes.cabinetQuote} className="flex min-h-12 items-center rounded-sm bg-action px-4 py-3 font-semibold text-on-action" onClick={() => setIsOpen(false)}>Request a quote</a>}
       </nav>
     </div>
   );

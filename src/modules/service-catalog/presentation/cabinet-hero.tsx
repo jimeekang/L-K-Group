@@ -26,7 +26,7 @@ export function CabinetHero() {
           <p className="kcp-hero-lead">Explore a new finish for suitable existing cabinets while keeping the kitchen layout you know. L&K Group assesses your surfaces, preparation and scope before work begins.</p>
           <div className="kcp-hero-actions">
             <a href="#cabinet-process" className="kcp-hero-primary">See the process <ArrowDown size={19} aria-hidden="true" /></a>
-            <button type="button" disabled aria-describedby="hero-quote-status" className="kcp-hero-disabled">Get a Free Quote</button>
+            <a href={siteRoutes.cabinetQuote} className="kcp-hero-disabled">Request a quote</a>
             <a href={`${siteRoutes.home}#contact`} className="kcp-hero-contact">{content.contactLabel} <ArrowUpRight size={17} aria-hidden="true" /></a>
           </div>
           <p id="hero-quote-status" className="kcp-hero-status">{content.quoteStatus}</p>
