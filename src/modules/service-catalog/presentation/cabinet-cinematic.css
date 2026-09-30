@@ -48,7 +48,8 @@
 .kcp-hero-actions a, .kcp-hero-actions button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 3.5rem; font-size: var(--type-button-size); font-weight: var(--font-weight-bold); }
 .kcp-hero-primary { padding: .9rem 1.45rem; border-radius: 999px; background: var(--kcp-ink); color: var(--kcp-cream); text-decoration: none; }
 .kcp-hero-primary:hover { background: #202b27; }
-.kcp-hero-disabled { padding: .9rem 1.45rem; border: 1px solid var(--kcp-ink); border-radius: 999px; background: rgba(242,239,232,.55); color: var(--kcp-ink); opacity: .6; cursor: not-allowed; }
+.kcp-hero-disabled { display: inline-flex; min-height: 3.3rem; align-items: center; padding: .9rem 1.45rem; border: 1px solid var(--kcp-ink); border-radius: 999px; background: rgba(242,239,232,.8); color: var(--kcp-ink); text-decoration: none; font-weight: 700; }
+.kcp-hero-disabled:hover { background: var(--kcp-ink); color: var(--kcp-cream); }
 .kcp-hero-contact { text-decoration: underline; }
 .kcp-hero-status { max-width: 57ch; margin-top: 1rem; font-size: var(--type-caption-size); }
 .kcp-hero-bottom { display: flex; justify-content: space-between; gap: 2rem; align-items: end; font-size: var(--type-caption-size); }

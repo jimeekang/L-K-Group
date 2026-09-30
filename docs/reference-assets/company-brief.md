@@ -2,6 +2,8 @@
 
 접수일: 2026-09-27. 출처: 사용자가 전달한 회사 답변. 메인페이지 콘텐츠와 향후 Cabinet 상세 제작의 기준 자료다. 회사 제공 정보와 파일 수령 여부, 추가 확인 항목을 구분한다. 외부 사업자·자격 조회를 완료했다는 뜻은 아니다.
 
+2026-09-30 추가 결정: 회사 연동 계정과 KCP 최종 인보이스 발행·납기 규칙을 아래에 반영했다. 근무시간·기간 계산 규칙은 보류하며 정찰제는 가격 자료를 받은 뒤 진행한다.
+
 ## 1. 브랜드
 
 | 항목 | 회사 제공 내용 |
@@ -54,7 +56,7 @@ With over 10 years of painting experience, we focus on careful preparation, atte
 | 문의 담당자 | Lisa |
 | 전화 | 0404 603 966 — 링크: `tel:+61404603966` |
 | 고객 문의 이메일 | Lnkpaintingau@gmail.com |
-| 운영 계정에 사용할 회사 이메일 | Lnkpaintingau@gmail.com |
+| Google Calendar·외부 서비스 연동에 사용할 회사 계정 | Lnkgroupsydney@gmail.com — 사용자 지정 2026-09-30 |
 | 영업·문의 시간 | 매일 7:00am–9:00pm, Sydney 현지 시간 |
 | 답변 안내 | 24시간 이내 답변 |
 | 공개 위치 | Ermington NSW 2115 — 상세 번지·방문 사무실 주소는 미제공 |
@@ -63,7 +65,9 @@ With over 10 years of painting experience, we focus on careful preparation, atte
 | Painting licence | 354520C |
 | 보험 | 핸디맨 홍보물에 $20M 보험 문구 있음. 현재 증권·보장 범위·브랜드 적용 여부는 미확인, 메인에 보장 문구 추가하지 않음 |
 
-회사 이메일 전달은 완료됐다. Supabase·Vercel 계정 접근 권한, 프로젝트 연결·비용·배포 승인 및 운영 도메인은 아직 제공되지 않았다. 이메일만으로 외부 계정을 생성하거나 공개 배포하지 않는다.
+회사 연동 계정은 `Lnkgroupsydney@gmail.com`으로 지정됐다. 고객 문의 이메일 `Lnkpaintingau@gmail.com`은 별도 연락처다. Google OAuth·대상 캘린더/공유 설정·외부 서비스 접근과 연결 검증은 아직 수행하지 않았으며 운영 도메인·비용·공개 승인은 별도다. 현재 요청은 P0 명세까지이며 이메일 지정만으로 계정을 생성하거나 연결 완료로 표시하지 않는다. 위 영업·문의 시간은 아직 미정인 예약 근무시간·기간 계산 규칙의 대체값이 아니다.
+
+KCP 프로젝트의 마지막 작업을 마친 뒤 사용자가 앱에서 **Complete**를 누르면 최종 인보이스를 발행한다. 납기는 **실제 발행일로부터 3일 후**이며 [27번 명세](../plans/27-kcp-google-calendar-sync.md)에서는 Sydney 날짜 기준 달력일로 해석한다. 발행일·납기·완료 상태를 Google Calendar에 자동 반영하는 것이 구현 목표이며 실제 발행·연동은 미구현이다.
 
 ## 5. 서비스 지역
 

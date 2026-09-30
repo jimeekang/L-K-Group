@@ -1,5 +1,11 @@
 # 기술 구조와 배포 계획
 
+**2026-09-30 현재 실행 범위:** KCP 견적·AI·가격·일정·인보이스·결제는 [25번 순차 구현 계획](25-kcp-quote-to-booking-implementation.md)을 따른다. 아래 초기 메인 계획은 당시 기록이며 회사 승인 전 외부 연결 금지는 유지한다. 문의·고객·분석·견적·예약·청구 모듈과 최소 관리자 기능을 필요한 단계에 도입하고, 미래 업무의 빈 모듈을 미리 만들지 않는다.
+
+P0 상세 계약은 [26번](26-kcp-p0-contracts-and-reuse.md)이며 사용자 추가 요청으로 `calendar-sync` 모듈과 **Google Calendar 양방향 연동·자동 날짜 설정**을 필수 범위에 포함한다. [27번](27-kcp-google-calendar-sync.md)의 outbox·증분 조회·etag·변경 검토를 적용하고, Calendar 수정이 견적/입금 사실을 덮지 않게 한다. 업무 원본은 DB, 일정 표시/수정 채널은 Google로 구분한다.
+
+**이번 로컬 구현:** [28번](28-gmail-enquiry-calendar-implementation.md)은 `enquiries`의 고객 화면, `operations`의 업무 규칙·SQLite/Auth/Calendar 어댑터·운영 화면, `gmail-intake`의 읽기 전용 수집 모듈로 구성한다. `src/app/api`는 공개 진입점의 서버 핸들러만 조립한다. `node:sqlite` 저장소와 loopback 접근은 회사 클라우드 DB 준비 전 기능을 검증하는 명시적 로컬 경로다. 아래 Supabase·Vercel 구조의 구현 완료를 뜻하지 않으며 이 SQLite 파일을 서버리스 함수의 영속 저장소로 사용하지 않는다.
+
 ## 권장 구성
 
 2026-09-27 착수 변경: Day 2 메인 프로토타입은 외부 연결 없이 로컬 Next.js로 만든다. Vercel·Supabase는 회사 측 이메일·승인 후 그 회사 계정으로 연결한다. 아래 클라우드 구성은 연결 단계의 기준이며 현재 생성·연결 완료를 뜻하지 않는다. 현재 구현 범위는 [메인 실행 명세](17-home-prototype-design-plan.md)를 따른다.
@@ -38,6 +44,7 @@ DB는 고객·견적·주문·재고 상태의 원본이다. Stripe는 결제 �
 | 결제 | Stripe Checkout | 카드정보 직접 저장 없음, 결제 성공은 Webhook으로 확정 |
 | 작업 큐 | DB outbox + Supabase Queues 또는 동일 수준의 영속 큐 | 한 번 이상 전달을 가정하고 중복 안전 처리 |
 | 이메일 | Resend 또는 동등 제공자 | 전송·반송 이벤트, 도메인 인증, 공급자 변경 가능 |
+| 운영 캘린더 | Google Calendar — 사용자 지정 | 회사 캘린더·양방향 검증·작업/청구 이벤트, CalendarPort로 공급자 의존 분리 |
 | 주소 | Google 주소 자동완성 후보 | 서버에서 주소 검증, 저장·표시 정책 사전 확인 |
 | 배포 | Vercel | Preview·Staging·Production 분리, 배포 승인 기록 |
 | 개발 환경 | 로컬 Next.js + Supabase Cloud 테스트 프로젝트 + Supabase CLI | 테스트·운영 DB 분리, DB 변경 파일 관리. Docker는 필요 시 사용 |

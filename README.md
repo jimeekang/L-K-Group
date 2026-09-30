@@ -8,11 +8,13 @@ L&K Group의 서비스 홈페이지, 온라인 쇼핑몰, ERP·CRM 운영관리 
 
 ## 읽는 순서
 
-**현재 착수 순서(2026-09-27): [메인 3일 → Cabinet 약 1주 → Coatly 기반 회사 관리 웹 TODO](docs/plans/15-home-cabinet-admin-todo.md).** 아래 문서들은 전체 사업의 상세 계획이며, 당장 할 일은 이 체크리스트를 먼저 따른다.
+**현재 작업(2026-09-30): [Gmail 문의 → 회사 검토 → Google Calendar](docs/plans/28-gmail-enquiry-calendar-implementation.md) 로컬 구현·검증 완료.** [18번 후속 제품 흐름](docs/plans/18-kcp-page-prototype.md)·[25번 전체 계획](docs/plans/25-kcp-quote-to-booking-implementation.md)·[15번 TODO](docs/plans/15-home-cabinet-admin-todo.md)를 따른다. P0 명세 이후 KCP 견적 폼, 로컬 SQLite 저장, `/admin` 비공개 문의함, 회사 OAuth, Gmail 라벨 수집과 제안 일정의 Calendar 양방향 검토를 구현했다. 코드 검사·대체 전송 테스트 23개·실제 브라우저·재시작 보존 확인은 [검증 기록](docs/verification/2026-09-30-gmail-calendar.md)을 따른다. 실제 Google 연결은 회사 OAuth 클라이언트 설정 대기다. 설정 방법·이번 구현 범위는 28번에 정리한다.
+
+연동 계정은 `Lnkgroupsydney@gmail.com`이며 공개 문의 이메일과 구분한다. Google에서의 수정은 검증 후 앱에 반영한다. **마지막 작업 후 프로젝트 Complete → 인보이스 발행 → 실제 발행일 +3 달력일 납기(Sydney)** 정책은 [27번](docs/plans/27-kcp-google-calendar-sync.md)에 보존한다. 청구 실행·사진·AI·Resend는 후속 단계다. 근무시간·기간 산식은 보류하고 정찰제는 가격 수령 후 진행한다. 지금 저장하는 일정은 고객이 수락한 확정 예약이 아니다. 과거 Cabinet ‘약 1주’는 소개·문의 접수 목표이며 전체 기능의 납기가 아니다.
 
 **현재 작업(2026-09-29): KCP 시네마틱 디자인 구현·로컬 검증 완료.** 메인은 기존 서비스 소개 프로토타입으로 유지하고, **Kitchen Cabinet Painting 상세에만** 사진형 Hero, 실제 WebGL 9단계 공정과 완료 장면, 전후 비교 슬라이더, 색상·광택 미리보기를 적용했다. [최신 구현 범위](docs/plans/24-cinematic-kitchen-webgl.md), [글로벌 디자인 시스템](docs/plans/21-global-design-system.md), [실제 검증 기록](docs/verification/2026-09-29-cinematic-v3.md)을 따른다. 같은 모델의 문짝·손잡이·힌지를 분리하고 세척·국소 퍼티 보수·프라이머·두 마감 코트·재조립을 가역 스크롤로 연결했다. 모델은 사진을 참고한 건축 컨셉이며 실측 CAD나 실사 재구성은 아니다. 모바일·JavaScript/WebGL 미지원 환경에는 읽을 수 있는 사진과 본문을 제공한다. 전역 토큰과 공용 KitchenScene 렌더러를 콘텐츠에서 분리했다. 현재 프로덕션 미리보기는 [KCP](http://127.0.0.1:3002/services/cabinet-painting) / [메인](http://127.0.0.1:3002)이다.
 
-회사 자료·메인 SEO는 앞서 반영했다. [회사 제공 자료](docs/reference-assets/company-brief.md)를 기준으로 실제 전화·이메일·지역·회사 로고·홍보 이미지·작업 사진을 유지한다. 회사 이메일은 수령됐고 계정 접근·연결/배포 승인·운영 도메인은 대기다. `noindex`는 유지하며 온라인 Free Quote·사진 업로드·AI·예약·인보이스·결제는 [후속 범위](docs/plans/18-kcp-page-prototype.md)다. 현장별 전후 사례 자료·실측 정밀 모델·정량 성능 및 실제 기기 검증은 남아 있다.
+회사 자료·메인 SEO는 앞서 반영했다. [회사 제공 자료](docs/reference-assets/company-brief.md)를 기준으로 실제 전화·이메일·지역·회사 로고·홍보 이미지·작업 사진을 유지한다. 회사 연동 계정은 지정됐고 실제 계정 접근·연결 검증·배포 승인·운영 도메인은 대기다. `noindex`는 유지하며 로컬 요청 폼 이후 사진 업로드·AI·확정 견적/예약·인보이스·결제는 [순차 구현 목표](docs/plans/25-kcp-quote-to-booking-implementation.md)로 남긴다. 현장별 전후 사례 자료·실측 정밀 모델·정량 성능 및 실제 기기 검증은 남아 있다.
 
 Cabinet 상세 `/services/cabinet-painting`의 6개 서비스·적합성·포함/제외·공정·컨셉 사례·FAQ 최초 구성은 [SEO·지역 개정](docs/plans/19-kcp-seo-content-and-service-area.md)과 [이전 검증](docs/verification/2026-09-27-kcp-seo-content.md)을 참조한다. 회사가 제공한 최신 서비스 지역은 기존 지도 조사의 제한적인 후보 목록보다 우선한다.
 
@@ -24,10 +26,11 @@ Node.js 24와 npm 11을 사용한다. `.nvmrc`는 확인한 로컬 버전을 기
 
 ```sh
 npm ci
-npm run dev
+npm run setup:local
+npm run dev -- --port 3002
 ```
 
-로컬 주소는 `http://127.0.0.1:3000`이다. 현재 앱은 외부 계정·DB 키 없이 실행되며 색인은 비활성화돼 있다. 검사 명령은 `npm run lint`, `npm run typecheck`, `npm run build`이며 `npm run check`로 순서대로 실행할 수도 있다. CI 설정은 추가했지만 GitHub에서 실행한 결과와는 구분한다.
+현재 기능 검증 주소는 `http://127.0.0.1:3002`다. `setup:local`은 기존 설정을 보존하고, 최초 실행 때 비공개 `.env.local`에 관리자 비밀번호·토큰 암호화 키를 생성한다. [28번 로컬 설정과 Google 연결 안내](docs/plans/28-gmail-enquiry-calendar-implementation.md)를 따른다. 다른 포트로 실행하려면 `APP_BASE_URL`과 Google redirect URI도 함께 맞춘다. 로컬 업무 저장소는 이 기기에만 유지되며 클라우드 DB나 서버리스 배포용 어댑터가 아니다. Google 키 없이도 폼 저장과 운영 검토는 가능하고, 실제 Gmail·Calendar 동기화에는 OAuth 설정이 필요하다. 검사 명령은 `npm run lint`, `npm run typecheck`, `npm run build`이며 `npm run check`로 순서대로 실행할 수도 있다. CI 설정과 실제 GitHub 실행 결과는 구분한다.
 
 현재 Mac에서 Turbopack의 CSS worker 포트 권한 오류를 확인해 공식 Webpack 옵션으로 dev·build를 구성했다. Webpack production 빌드는 통과했다. Next.js 공식 ESLint preset의 peer 호환 범위에 맞춰 ESLint 9를 고정했으며 npm의 지원 종료 경고는 남아 있다. 자세한 결과는 [검증 기록](docs/verification/2026-09-27-home-prototype.md)을 따른다.
 
@@ -62,6 +65,10 @@ npm run dev
 | [22 KCP 전체 화면 공정](docs/plans/22-cinematic-cabinet-story.md) | 메인 프로토타입 유지, KCP Hero·공정 우선 배치·사진 레이어·표현 한계 |
 | [23 정면 캐비넷 깊이 연출](docs/plans/23-front-cabinet-depth-story.md) | Concept 2 공정 사진, 6개 도어·원본 배경 합성·절제된 입체 움직임 |
 | [24 시네마틱 WebGL 공정](docs/plans/24-cinematic-kitchen-webgl.md) | 실제 3D 9단계 공정, 전후 비교, 색상·광택, 정적 대체와 최신 검증 |
+| [25 KCP 견적부터 결제까지](docs/plans/25-kcp-quote-to-booking-implementation.md) | P0~P8 순차 구현, AI·가격·예약 요청/확정·회사 duration·청구/결제, 선행 조건과 KQ 검증 |
+| [26 KCP P0 계약·재사용](docs/plans/26-kcp-p0-contracts-and-reuse.md) | Coatly 실제 소스 검토, 입력·상태·DB/권한·API 계약, 이식 전 수정과 운영 결정 |
+| [27 Google Calendar 연동](docs/plans/27-kcp-google-calendar-sync.md) | 양방향 검증 후 확정, 시간/기간·발행/납기 자동 설정, 동기화·충돌·GC 검증 |
+| [28 Gmail 문의·Calendar 구현](docs/plans/28-gmail-enquiry-calendar-implementation.md) | 로컬 요청 저장·관리, Gmail 라벨 수집, Calendar 변경 검토, 회사 OAuth 최초 설정 |
 
 클라이언트 전달본은 [Word 구현계획서](deliverables/LK_Group_Client_Implementation_Plan_KO.docx)이며, 편집 가능한 원문은 [클라이언트 제안서 Markdown](docs/client-proposal.md)이다. 기술 기준은 위 개발 문서가 원본이며, 클라이언트 문서를 변경할 때 관련 개발 문서도 함께 갱신한다. 문서 자체의 확인 결과는 [검증 기록](docs/document-validation.md)에 정리했다.
 

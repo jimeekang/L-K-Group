@@ -3,7 +3,6 @@ import { ArrowRight } from "lucide-react";
 import { siteAssets } from "@/shared/config/assets";
 import { getNavigationItems, siteRoutes } from "@/shared/config/navigation";
 import { siteConfig } from "@/shared/config/site";
-import { Button } from "@/shared/ui/button";
 import { Container } from "@/shared/ui/container";
 import { companyContent } from "../content/company-content";
 import { MobileMenu } from "./mobile-menu";
@@ -99,9 +98,9 @@ export function CompanyHeader({
             ))}
           </nav>
           <div className="hidden lg:block">
-            <Button variant="outline" disabled aria-describedby="hero-quote-status" className="cabinet-header-quote min-h-12 gap-5 px-7">
-              Free quote <ArrowRight size={19} aria-hidden="true" />
-            </Button>
+            <a href={siteRoutes.cabinetQuote} className="cabinet-header-quote inline-flex min-h-12 items-center gap-5 rounded-full border border-action px-7 py-3 text-button font-bold hover:bg-action hover:text-on-action">
+              Request a quote <ArrowRight size={19} aria-hidden="true" />
+            </a>
           </div>
           <MobileMenu items={mobileItems} photo />
         </div>

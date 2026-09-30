@@ -1,6 +1,7 @@
 export const siteRoutes = {
   home: "/",
   cabinetPainting: "/services/cabinet-painting",
+  cabinetQuote: "/quote/start?service=cabinet-painting",
 } as const;
 
 export type NavigationItem = Readonly<{
